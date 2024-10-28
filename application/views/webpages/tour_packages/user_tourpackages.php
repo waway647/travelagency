@@ -58,7 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     
 
             <div class="logo-container">
-                <a href="http://localhost/travelagency_ci/index.php/Account/redirect_userHomePage">
+                <a href="http://localhost/GitHub/travelagency/index.php/Account/redirect_userHomePage">
                     <img src="<?php echo base_url('images/logos/black.png'); ?>" alt="" id="logo">
                 </a>    
             </div>
@@ -77,7 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             loadPagination(0);
 
             function loadPagination(pagno){
-                var url = 'http://localhost/travelagency_ci/index.php/UserController/loadRecord2/' + pagno;
+                var url = 'http://localhost/GitHub/travelagency/index.php/UserController/loadRecord2/' + pagno;
                 console.log('Request URL:', url); // Log the URL
                 $.ajax({
                     url: url,
@@ -131,7 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </div>
                                             <div class="tourItemBox-buttonContainer">
                                                 <a href="">
-                                                    <form action="http://localhost/travelagency_ci/index.php/UserController/tourPackages_session" method="post">
+                                                    <form action="http://localhost/GitHub/travelagency/index.php/UserController/tourPackages_session" method="post">
                                                         <input type="hidden" name="tourpackage_id" value="${tourpackage_id}">
                                                         <button type="submit" class="bookTourButton" id="headerButton">Book Tour</button>
                                                     </form>
