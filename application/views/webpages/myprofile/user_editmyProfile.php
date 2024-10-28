@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="header" id="myProfile">
                 
             <div class="logo-container">
-                <a href="http://localhost/travelagency_ci/index.php/Account/redirect_userHomepage">
+                <a href="http://localhost/GitHub/travelagency/index.php/Account/redirect_userHomepage">
                     <img src="<?php echo base_url('images/logos/black.png'); ?>" alt="">
                 </a>
             </div>
