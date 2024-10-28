@@ -14,14 +14,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="signIn-container">
 
         <form name="regform" id="regform" method="post"
-		   action="http://localhost/travelagency_ci/index.php/Account/create_user_2">
+		   action="http://localhost/GitHub/travelagency/index.php/Account/create_user_2">
         
 
             <div class="main-container">
 
 
                 <div class="logo-container">
-                    <a href="http://localhost/travelagency_ci/index.php/Account/showHomepage">
+                    <a href="http://localhost/GitHub/travelagency/index.php/Account/showHomepage">
                         <img src="<?php echo base_url('images/logo/web_logo.png'); ?>" alt="">
                     </a>
                 </div>
@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="signInCard">
 
-                    <a href="http://localhost/travelagency_ci/index.php/Account/showSignUp_1">
+                    <a href="http://localhost/GitHub/travelagency/index.php/Account/showSignUp_1">
                         <div class="backIcon">
                             <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="">
                         </div>
