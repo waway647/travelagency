@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
                 <div class="logo-container">
-                    <a href="http://localhost/travelagency_ci/index.php/Account/showHomepage">
+                    <a href="http://localhost/GitHub/travelagency/index.php/Account/showHomepage">
                         <img src="<?php echo base_url('images/logo/web_logo.png'); ?>" alt="">
                     </a>
                 </div>
@@ -69,12 +69,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                             <div class="p-container">
                                 <p>Already have an account? &nbsp</p>
-                                <a href="http://localhost/travelagency_ci/index.php/Account/redirect_signIn"><p>Sign in</p></a>
+                                <a href="http://localhost/GitHub/travelagency/index.php/Account/redirect_signIn"><p>Sign in</p></a>
                             </div>
 
                             <div class="input-container">
                                 <form name="registerSignUp" id="registerSignUp" method="post"
-                                action="http://localhost/travelagency_ci/index.php/Account/create_user_1">
+                                action="http://localhost/GitHub/travelagency/index.php/Account/create_user_1">
                                         <div class="textbox-container">
                                             <p>Username</p>
                                                 <input type="text" name="username" id="email_address" placeholder="" onclick="" required>
