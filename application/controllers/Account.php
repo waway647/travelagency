@@ -71,7 +71,7 @@ class Account extends CI_Controller {
 				else 
 				{
 					$this->session->set_flashdata('error_message', 'Invalid Username or Password. Try again!.');
-					redirect('http://localhost/travelagency_ci/index.php/Account/redirect_signIn');
+					redirect('http://localhost/GitHub/travelagency/index.php/Account/redirect_signIn');
 				}
 			}
 			else
@@ -106,7 +106,7 @@ class Account extends CI_Controller {
 				else 
 				{
 					$this->session->set_flashdata('error_message', 'Invalid Username or Password. Try again!');
-					redirect('http://localhost/travelagency_ci/index.php/Account/redirect_signIn');
+					redirect('http://localhost/GitHub/travelagency/index.php/Account/redirect_signIn');
 				}
 			}
 		}
