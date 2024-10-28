@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Welcome to CodeIgniter</title>
 	<link rel = "stylesheet" type = "text/css" 
          href = "<?php echo base_url(); ?>css/style.css?<?php echo time(); ?>"> 
-    <link rel="icon" href="<?php echo base_url('images/logo/Logo_final.png'); ?>">
+    <link rel="icon" href="<?php echo base_url('images/logo/url_logo.png'); ?>">
 	
 </head>
 <body>
