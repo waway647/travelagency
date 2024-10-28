@@ -66,6 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <tr>
                                 <th>ID</th>
                                 <th>User ID</th>
+                                <th>Booking Reference</th>
                                 <th>Tour ID</th>
                                 <th>Group ID</th>
                                 <th>Status</th>
@@ -113,6 +114,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         $('#assetList tbody').empty();
                         for(index in result){
                             var id = result[index].id;
+                            var userID = result[index].userID;
+                            var booking_reference = result[index].booking_reference;
                             var tourID = result[index].tourID;
                             var contactID = result[index].contactID;
                             var status = result[index].status;
@@ -123,6 +126,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             
                             var tr = "<tr>";
                             tr += "<td>"+ id +"</td>";
+                            tr += "<td>"+ loginID +"</td>";
+                            tr += "<td>"+ booking_reference +"</td>";
                             tr += "<td>"+ tourID +"</td>";
                             tr += "<td>"+ contactID +"</td>";
                             tr += "<td>"+ status +"</td>";
