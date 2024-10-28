@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="header" id="myProfile">
                 
             <div class="logo-container">
-                <a href="http://localhost/travelagency_ci/index.php/Account/redirect_userHomepage">
+                <a href="http://localhost/GitHub/travelagency/index.php/Account/redirect_userHomepage">
                     <img src="<?php echo base_url('images/logos/black.png'); ?>" alt="">
                 </a>
             </div>
@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="list-container">
                 <ul>
                     <li><a href="#">About us</a></li>
-                    <li><a href="http://localhost/travelagency_ci/index.php/UserController/show_user_tourpackages">Tour Packages</a></li>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/UserController/show_user_tourpackages">Tour Packages</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contacts</a></li>
                     
@@ -87,8 +87,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                 <div class="signout-bar-container">
 
-                                    <a href="http://localhost/travelagency_ci/index.php/UserController/redirect_signIn_to_another"><p>Log into Another Account</p></a>
-                                    <a href="http://localhost/travelagency_ci/index.php/Account/logout"><p>Sign Out</p></a>
+                                    <a href="http://localhost/GitHub/travelagency/index.php/UserController/redirect_signIn_to_another"><p>Log into Another Account</p></a>
+                                    <a href="http://localhost/GitHub/travelagency/index.php/Account/logout"><p>Sign Out</p></a>
 
                                 </div>
 
