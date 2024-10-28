@@ -64,11 +64,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <table class="table-bookings table-bordered" id="assetList">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>User ID</th>
                                 <th>Booking Reference</th>
                                 <th>Tour ID</th>
                                 <th>Group ID</th>
+                                <th>Login ID</th>
                                 <th>Status</th>
                                 <th>Time (Created)</th>
                                 <th>Time (Updated)</th>
@@ -113,11 +112,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         sno = Number(sno);
                         $('#assetList tbody').empty();
                         for(index in result){
-                            var id = result[index].id;
-                            var userID = result[index].userID;
                             var booking_reference = result[index].booking_reference;
                             var tourID = result[index].tourID;
                             var contactID = result[index].contactID;
+                            var loginID = result[index].loginID;
                             var status = result[index].status;
                             var created_at = result[index].created_at;
                             var updated_at = result[index].updated_at;
@@ -125,11 +123,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             sno+=1;
                             
                             var tr = "<tr>";
-                            tr += "<td>"+ id +"</td>";
-                            tr += "<td>"+ loginID +"</td>";
                             tr += "<td>"+ booking_reference +"</td>";
                             tr += "<td>"+ tourID +"</td>";
                             tr += "<td>"+ contactID +"</td>";
+                            tr += "<td>"+ loginID +"</td>";
                             tr += "<td>"+ status +"</td>";
                             tr += "<td>"+ created_at +"</td>";
                             tr += "<td>"+ updated_at +"</td>";
