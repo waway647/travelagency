@@ -26,17 +26,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
             <div class="sidebar">
-            <ul>
-                <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminDashboard">Dashboard</a></li>
-                <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showUserAccounts">User Accounts</a></li>
-                <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showTourPackages">Tour Packages</a></li>
-                <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminBookings">Bookings</a></li>
-                <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminArchives">Archives</a></li>
-                <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showTransactions">Transactions</a></li>
-                <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminReviews">Reviews</a></li>
-                <li><a href="http://localhost/travelagency_ci/index.php/Account/LogOut">Log Out</li></a>
-            </ul>
-        </div>
+                <ul>
+                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminDashboard">
+                        <img src="http://localhost/travelagency_ci/images/icons/dashboard.png" alt="Dashboard-icon"><span>Dashboard</span></a></li>
+
+                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showUserAccounts">
+                        <img src="http://localhost/travelagency_ci/images/icons/userAccounts.png" alt="User-Accounts-icons"><span>User Accounts</span></a></li>
+
+                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showTourPackages">
+                        <img src="http://localhost/travelagency_ci/images/icons/tourPackages.png" alt="Tour-Packages-icon"><span>Tour Packages</span></a></li>
+
+                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminBookings">
+                        <img src="http://localhost/travelagency_ci/images/icons/bookings.png" alt="Bookings-icon"><span>Bookings</span></a></li>
+
+                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminArchives">
+                        <img src="http://localhost/travelagency_ci/images/icons/archives.png" alt="Archives-icon"><span>Archives</span></a></li>
+
+                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showTransactions">
+                        <img src="http://localhost/travelagency_ci/images/icons/transactions.png" alt="Transactions-icon"></span>Transactions</span></a></li>
+
+                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminReviews">
+                        <img src="http://localhost/travelagency_ci/images/icons/reviews.png" alt="Reviews-icon"><span>Reviews</span></a></li>
+
+                    <li><a href="http://localhost/travelagency_ci/index.php/Account/LogOut">
+                        <img src="http://localhost/travelagency_ci/images/icons/logout.png" alt="LogOut-icon"><span>Log Out</span></li></a>
+                </ul>
+            </div>
         </nav>
     </div>
     <div class="main-content">
