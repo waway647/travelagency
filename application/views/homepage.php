@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     
                 <div class="list-container">
                     <ul>
-                        <li><a href="#aboutUs">About us s</a></li>
+                        <li><a href="#aboutUs">About us</a></li>
                         <li><a href="http://localhost/travelagency_ci/index.php/Account/redirect_signIn">Tour Packages</a></li>
                         <li><a href="reviews">Reviews</a></li>
                         <li><a href="#contacts">Contacts</a></li>
