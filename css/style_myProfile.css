@@ -1,0 +1,365 @@
+/* MY PROFILE */
+
+.myProfile-container {
+    padding: 0;
+    margin: 0;
+}
+
+.myProfile-container .header {
+    padding: 25px 300px 25px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+    #myProfile ul li a{
+        color: #202020;
+        text-shadow: none;
+    }
+
+    #myProfile ul li:hover {
+        border-bottom: 2px solid #202020;
+        transition: 0.3s;
+    }
+
+.profile-main-container {
+    padding: 50px 400px;
+    background-color: #f8f8f8;
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-column {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+#nav-container {
+    width: 27%;
+    height: 100%;
+}
+
+.profile-nav-container a {
+    text-decoration: none;
+    color: #202020;
+}
+    .nav-item-container {
+        border-bottom: 1px solid #e6e6e6;
+        height: 45px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-item-container:hover {
+        border-bottom: 1px solid #4173ff;
+        transition: 0.2s;
+    }
+
+    .nav-item-container h5 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+.nav-row-container {
+    padding: 28px 75px 28px 30px;
+}
+
+.nav-row-container h6 {
+    font-size: 11px;
+    font-weight: 800;
+    color: #4e4e4e;
+}
+
+.information-side-container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.column-wrapper {
+    width: 70%;
+    height: auto;
+}
+
+    .profile-pic-column {
+        width: 20%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .profile-pic-column h6 {
+        font-size: 13px;
+        font-weight: 500;
+        color: #4173ff;
+    }
+
+    .profile-pic-column a {
+        text-decoration: none;
+        display: flex;
+    }
+
+        .upload-profile-container {
+            padding-right: 30px;
+        }
+
+        .upload-profile-container img{
+            width: 100%;
+            height: auto;
+        }
+
+        .upload-profile-container #upload-icon {
+            width: 15px;
+            padding-right: 5px;
+            height: auto;
+        }
+
+    .personal-information-column {
+        padding-left: 30px;
+        border-left: 1px solid #e6e6e6;
+    }
+
+        .personal-information-column h6 {
+            font-size: 13px;
+            font-weight: 700;
+            color: #7a7a7a;
+            padding-bottom: 6px;
+        }
+
+        .personal-information-column input, #gender {
+            padding: 0 0 0 10px;
+            height: 28px;
+            border-radius: 3px;
+            border: 1px solid #b4b4b4;
+            font-size: 13px;
+            font-weight: 700;
+            width: 100%;
+        }
+
+    .personal-information-line {
+        margin: 5px 0 15px;
+        margin-right: 10px;
+        width: 100%;
+    } 
+
+        .personal-information-line #minit {
+            width: 50px;
+        }
+
+        .personal-information-line #first_name, #last_name {
+            width: 176px;
+        }
+
+        .personal-information-line #birthday {
+            width: 130px;
+        }
+
+        .personal-information-line #gender {
+            padding: 0 5px;
+            height: 30px;
+            width: 130px;
+        }
+
+    .personal-information-row {
+        display: flex;
+    }
+
+.bottom-selection {
+    padding: 15px 0;
+    display: flex;
+    justify-content: right;
+}
+
+.selection-container {
+    display: flex;
+}
+
+.selection-container a {
+    text-decoration-color: #4173ff;
+}
+
+.selection-container h6 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #4173ff;
+}
+
+.selection-container .button {
+    margin: 0 5px;
+}
+
+.edit-profile-button {
+    border: 0;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+#save-changes-button {
+    background-color: #62b6cb;
+}
+
+#save-changes-button:hover {
+    background-color: #57a6b9;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#cancel-button {
+    background-color: #e6e6e6;
+}
+
+#cancel-button:hover {
+    background-color: #b4b4b4;
+    transition: 0.2s;
+    cursor: pointer;
+}
+    
+
+/*  ADDITIONAL DOCUMENTS  */
+
+.passport-container {
+    padding: 15px 0;
+}
+
+.file-upload-container form {
+    padding: 5px 0 0 0;
+}
+
+.file-upload-container h6 {
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 3px;
+}
+
+.import-button {
+    border: 1px solid  #b4b4b4;
+    border-radius: 3px;
+    display: flex;
+    width: 100%;
+}
+
+.upload-button-container {
+    text-align: right;
+}
+
+    .upload-button {
+        background-color: #62b6cb;
+        border: 0;
+        font-size: 13px;
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
+
+    .upload-button:hover {
+        background-color: #57a6b9;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+
+/*  MY BOOKINGS */
+
+.sub-header-container-booking {
+    height: 50px;
+    background-color: #62b6cb;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin: 15px 0;
+    border-radius: 3px;
+}
+
+.booking-container {
+    padding: 0;
+    margin: 0;
+}
+
+.booking-row-container {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+}
+
+.booking-row-container h6 {
+    color: #202020;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.booking-header-column {
+    align-self: end;
+}
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#booking-package-name {
+    font-weight: 700;
+}
+
+.status-paragraph {
+    display: flex;
+}
+
+.status-paragraph a{ 
+    text-decoration: none;
+    align-self: center;
+}
+
+.status-paragraph img {
+    width: auto;
+    height: 15px;  
+}
+
+.status-paragraph p {
+    margin-right: 10px;
+}
+
+.my-booking-date {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-booking-date-container {
+    display: flex;
+}
+
+.my-start-end-date {
+    margin-right: 30px;
+    width: 100px;
+}
+
+.my-start-end-date p {
+    font-weight: 700;
+}
+
+.side-text-date {
+    align-self: last baseline;
+}
+
+.booking-button-options {
+    padding: 20px 0;
+    display: flex;
+    justify-content: right;
+}
+
+#view-itinerary-button {
+    background-color: #e6e6e6;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+#view-itinerary-button:hover {
+    cursor: pointer;
+    background-color: #b4b4b4;
+    transition: 0.4s;
+}

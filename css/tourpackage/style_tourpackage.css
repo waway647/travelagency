@@ -1,0 +1,572 @@
+.tourItemBox-buttonContainer {
+    display: flex;
+}
+
+.bookTourButton {
+    width: 150px;
+}
+
+
+/*  SEARCH  */
+.packageSearch {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+    .packageSearch .form-control {
+        border-radius: 50px;
+        width: 70%;
+        height: 50px;
+        padding: 20px;
+        border: 0 none;
+    }
+
+    .packageSearch .form-control:focus {
+        outline: 0 none;
+    }
+
+
+/* SUBMIT BUTTON */
+.button {
+    padding: 50px 0 200px;
+    text-align: center;
+}
+
+#submit-button {
+    border: 0;
+    padding: 10px 50px;
+    background-color: #6dc5db;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#submit-button:hover {
+    background-color: #63a5b6;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.image-container {
+    width: 100%; /* or specific width */
+    height: auto; /* or specific height */
+    overflow: hidden;
+    border-radius: 5px; /* Rounded corners if desired */
+    margin-bottom: 10px; /* Adjust spacing */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Add other styles here as needed */
+
+
+.tourHeading-container {
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.logo-container img {
+    height: 70px;
+    width: auto;
+}
+
+
+/*  T O U R     P A C K A G E   */
+
+.tourpackages-container h1 {
+    color: #fff;
+    font-size: 180px;
+    line-height: 140px;
+    text-align: center;
+}
+
+.tourpackages-container h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.tourHeading-container {
+    height: 800px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.main-container {
+    position: absolute;
+    width: 100%;
+    top: 700px;
+}
+
+.tourCatalog-container {
+    margin: 0 100px;
+}
+
+.tourItemBox {
+    background-color: #62b6cb;
+    margin-bottom: 10px;
+    height: 800px;
+    width: auto;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    padding: 100px;
+}
+
+.tourTextBox-container {
+    width: 100%;
+}
+
+.tourTextBox-container h3 {
+    font-size: 80px;
+    color: #fff;
+    text-shadow: -2px 4px 4px #202020;
+}
+
+.tourTextBox-container p {
+    font-size: 36px;
+    width: 700px;
+    line-height: normal;
+    color: #fff;
+    margin: 0;
+}
+        .tourpackage-price-container {
+            display: flex;
+            margin: 35px 0;
+            justify-content: space-between;
+        }
+
+        .tourpackage-price-container h4 {
+            font-size: 50px;
+            font-weight: 800;
+            margin: 0;
+            color: #fff;
+            text-shadow: -2px 4px 4px #202020;
+        }
+
+        .tourDiscoverButton {
+            border: 1px solid rgb(196, 216, 228);
+            background-color: rgb(240, 247, 255);
+            color: rgb(46, 178, 255);
+        }
+
+        .tourDiscoverButton:hover {
+            cursor: pointer;
+            background-color: rgb(196, 224, 255);
+            border: 1px solid rgb(135, 178, 207);
+            transition: 0.4s;
+        }
+
+        .bookTourButton {
+            background-color: rgb(46, 178, 255);
+            border: 1px solid rgb(46, 178, 255);
+            color: rgb(255, 255, 255);  
+        }
+        
+        .bookTourButton:hover {
+            cursor: pointer;
+            background-color: rgb(21, 140, 209);
+            border: 1px solid rgb(16, 124, 187);
+            transition: 0.4s;
+        }
+        
+
+    #tour-uzbekistan {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1557841621-230db92a8a12?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-siargao {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://images.squarespace-cdn.com/content/v1/59e5a696f43b5528bc1e3b24/1513144897518-JYZFT6D1681PYAIATSS4/dakusurfspotguide.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-jolo {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://discoveryfleet.com/wp-content/uploads/2020/06/Soft-Coral-and-fishes-scaled.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-maldives {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://wallpapers.com/images/featured/maldives-23wyvlaqa7aydqny.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-seychelles {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://wallpapers.com/images/hd/seychelles-beach-3840-x-2160-wallpaper-k3enwmvao3rteocg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-santorini {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://4kwallpapers.com/images/wallpapers/oia-santorini-greece-sunset-panoramic-colorful-sky-blue-2560x1440-5017.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-baliIndonesia {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://wallpapers.com/images/featured/bali-qhidusvhukn25lb1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-siquijor {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://suzionthemove.com/wp-content/uploads/2023/02/DSC06736-1024x683.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-maui {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://images7.alphacoders.com/902/902602.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-borabora {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIrm7tyUt9pQaNWfKBntA4MtSRHl_bgmiA9FZh3hlMs8HEAC7GBNXNADpQxIheR_beQAlRdqN3F2tH2cZhMa0PhUrP9x9qBZeCJDMEVrCNJ0Mf6wuhN85tgtGDen5vi_iy_KxCX2GZMNSM/w2560-h1600-c/bora-bora-beach-mountain-nature-33-4K.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #tour-bali {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(https://images.squarespace-cdn.com/content/v1/59e5a696f43b5528bc1e3b24/1513144897518-JYZFT6D1681PYAIATSS4/dakusurfspotguide.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+
+    /*ADD MORE TOURS*/
+
+
+.container .logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+
+
+/*  TOURS STYLES    */  /*  TOURS STYLES    */  /*  TOURS STYLES    */  /*  TOURS STYLES    */  /*  TOURS STYLES    */
+
+.tourTextHeading-container p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tourTextHeading-container h1 {
+    font-size: 100px;
+    width: 1000px;
+    line-height: 100px;
+}
+
+.barBreak-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color:#7a7a7a;
+}
+
+.barBreak-container h3 {
+    width: 1200px;
+    text-align: center;
+    font-size: 40px;
+    color:#fff;
+}
+
+
+.tourContent-container p {
+    font-size: 20px;
+    color:#202020;
+}
+
+.tourContent-container h3 {
+    width: 1200px;
+    font-size: 35px;
+    color:#202020;
+}
+
+.tourContent-container {
+    margin: 0 100px;
+}
+
+.RowDescription {
+    display: flex;
+    width: 100%;
+    align-items: end;
+    padding: 100px 0;
+    margin: 0;
+}
+
+.textDescription-container {
+    width: 37%;
+    align-items: end;
+}
+
+#firstRow .textDescription-container {
+    text-align: left;
+}
+
+.textDescription-container h3{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+#firstRow .imgDiv {
+    text-align: right;
+}
+
+.imgDiv {
+    width: 63%;
+}
+
+#firstRow img {
+    width: 80%;
+    height: auto;   
+}
+
+#secondRow img {
+    width: 60%;
+    height: auto; 
+}
+
+#thirdRow img {
+    width: 80%;
+}
+
+
+.tourContent-container .logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.itinerary-container {
+    padding: 100px 100px;
+}
+
+
+
+.itinerary-container h2 {
+    color: #202020;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/*  ITINERARY */
+.iteRow-container {
+    width: 100%;
+}
+
+.iteRow {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    #ite-1-row {
+        margin-left: 0;
+    }
+
+    #ite-2-row {
+        margin-left: 450px;
+    }
+
+    #ite-3-row {
+        margin-left: 300px;
+        text-align: right;
+    }
+
+    #ite-4-row {
+        margin-left: 450px;
+    }
+
+    #ite-5-row {
+        margin-left: 0;
+    }
+
+    #ite-6-row {
+        margin-left: 450px;
+    }
+
+    #ite-7-row {
+        margin-left: 300px;
+        text-align: right;
+    }
+
+    #ite-8-row {
+        margin-left: 450px;
+    }
+
+.iteColumn {
+    display: flex;
+}
+
+.iteColumn img {
+    height: 200px;
+    width: auto;
+}
+
+.iteColumnTextbox {
+    margin: 0 30px;
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid #202020;
+}
+
+.iteColumnTextbox h3 {
+    width: 100%;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.iteColumnTextbox li {
+    font-size: 20px;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    list-style-type:none;
+    margin-left: 20px;
+}
+
+.iteColumnTextbox li::before {
+    content: "-";
+    margin-right: 10px;
+}
+
+
+
+/*  TOUR PRICE  */
+
+.tourPrice-container {
+    background-color:#62b6cb;
+    padding: 100px 200px;
+    margin: 100px 0;
+}
+
+.tourPrice-container h4 {
+    padding: 30px 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.inclusion-grid {
+    display: flex;
+}
+
+.inclusion-grid  h6 {
+    padding: 0 0 15px 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.included-container {
+    width: 33%;
+    padding: 0 100px 0 0;
+}
+
+        .included-container li {
+            font-size: 16px;
+            font-family: "Onest", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 24px;
+            font-weight: 500;
+            list-style-type: none;
+        }
+
+        .included-container li::before {
+            content: "—";
+            margin-right: 4px;
+        }
+
+.notIncluded-container {
+    width: 33%;
+    padding: 0 100px;
+    border-right: 2px solid #202020;
+    border-left: 2px solid #202020;
+    height: 100%;
+}
+
+        .notIncluded-container li {
+            font-size: 16px;
+            font-family: "Onest", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 24px;
+            font-weight: 500;
+            list-style-type: none;
+        }
+
+        .notIncluded-container li::before {
+            content: "—";
+            margin-right: 4px;
+        }
+
+.extraInfo-container {
+    width: 33%;
+    padding: 0 0 0 100px;
+}
+
+.extraInfo-container p {
+    font-size: 16px;
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.borderBottomTextPrice {
+    display: flex;
+    justify-content: right;
+}
+
+.bottomTextPrice {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-bottom: 2px solid #202020;
+    width: 500px;
+}
+
+.bottomTextPrice h4 {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bookingTransition-container {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}

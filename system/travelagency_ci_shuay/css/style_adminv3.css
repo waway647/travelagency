@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper-container {
+    display: flex;
+}
+
+    .wrapper {
+        display: flex;
+        flex-grow: 1;
+    }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            padding: 10%;
+        }
+
+        .navbar-left {
+            background-color: rgb(22, 21, 21);
+            width: 25%;
+            flex-grow: 1;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+            justify-content: flex-start;
+            color: antiquewhite;
+            overflow-y: auto;
+            cursor: pointer;
+        }
+
+        #navbar-crud {
+            height: 100vh;
+        }
+
+        nav ul {
+            margin-top: 40px;
+        }
+
+        nav ul li {
+            margin: 15px 18px;
+            text-align: left;
+        }
+
+        nav li a {
+            color: antiquewhite;
+        }
+
+        .sidebar li a {
+            height: fit-content;
+            width: 100%;
+            border-radius: 10px;
+            text-align: left;
+            display: block;
+        }
+
+        nav ul li:last-child {
+            margin-top: 60px;
+        }
+
+        li a:hover, li a:focus {
+            background-color: rgb(121, 121, 121);
+            cursor: pointer;
+        }
+
+        .NavPic-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .NavPic-container img {
+            width: 30%;
+            height: auto;
+            border-radius: 50%;
+            margin: 15px 0;
+        }
+
+        .adminName-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .adminName-container h4 {
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+
+    .maincontent-container {
+        margin: 100px;
+        width: 100%;
+    }
+
+    /*  Tour Package    */
+    .tour-card {
+        border: 1px solid #D0D0D0;
+        padding: 15px;
+        margin: 10px;
+        box-shadow: 0 0 8px #D0D0D0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .navbar-left {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 15px 30px;
+    }
+
+    .NavPic-container img {
+        width: 40%;
+    }
+
+    .adminName-container h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-left {
+        width: 150px;
+        font-size: 13px;
+    }
+
+    nav ul li {
+        margin: 15px 20px;
+    }
+
+    .NavPic-container img {
+        width: 50%;
+    }
+
+    .adminName-container h4 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-left {
+        width: 100%;
+        height: auto;
+        position: relative;
+        font-size: 12px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .NavPic-container img {
+        width: 60%;
+    }
+
+    .adminName-container h4 {
+        font-size: 12px;
+    }
+}
