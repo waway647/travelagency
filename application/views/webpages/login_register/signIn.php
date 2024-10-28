@@ -33,12 +33,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="topOption-container">
                 <form name="regform" id="regform" method="post"
-                action="http://localhost/travelagency_ci/index.php/Account/proc_login">
+                action="http://localhost/GitHub/travelagency/index.php/Account/proc_login">
                         <h2>Sign in</h2>
 
                         <div class="p-container">
                             <p>New user? &nbsp</p>
-                            <a href="http://localhost/travelagency_ci/index.php/Account/showSignUp_1"><p>Create an account</p></a>
+                            <a href="http://localhost/GitHub/travelagency/index.php/Account/showSignUp_1"><p>Create an account</p></a>
                         </div>
 
                         <div class="input-container">
