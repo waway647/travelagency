@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>Bedan Travel & Tours</title>
 	<link rel = "stylesheet" type = "text/css" 
          href = "<?php echo base_url(); ?>css/style.css?<?php echo time(); ?>"> 
     <link rel="icon" href="<?php echo base_url('images/logo/url_logo.png'); ?>">
