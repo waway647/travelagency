@@ -65,7 +65,7 @@ class Account extends CI_Controller {
 			{
 				$result = $this->Account_model->getAdminlogin($username_frompost, $pass_frompost);
 				if ($result == true) {
-					var_dump($this->session->all_userdata());
+					/* var_dump($this->session->all_userdata()); */
 					$this->redirect_adminPage();
 				} 
 				else 
