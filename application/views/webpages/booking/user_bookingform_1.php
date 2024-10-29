@@ -4,11 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>Bedan Travel & Tours</title>
+    <link rel="icon" href="<?php echo base_url('images/logo/url_logo.png'); ?>">
 	<link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/style.css?<?php echo time(); ?>"> 
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/booking/style_bookingForm1.css?<?php echo time(); ?>"> 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 	<!-- jQuery library -->
 	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	<!-- Popper JS -->
@@ -35,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <div class="header">
                 
                                             <div class="logo-container">
-                                                <a href="http://localhost/travelagency_ci/index.php/Account/redirect_userHomePage">
+                                                <a href="http://localhost/GitHub/travelagency/index.php/Account/redirect_userHomePage">
                                                     <img src="<?php echo base_url('images/logos/black.png'); ?>" alt="" id="logo">
                                                 </a>
                                             </div>
@@ -106,8 +107,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 
                                                                 <div class="signout-bar-container">
                                 
-                                                                    <a href="http://localhost/travelagency_ci/index.php/Account/redirect_signIn_to_another"><p>Log into Another Account</p></a>
-                                                                    <a href="http://localhost/travelagency_ci/index.php/Account/logout"><p>Sign Out</p></a>
+                                                                    <a href="http://localhost/GitHub/travelagency/index.php/Account/redirect_signIn_to_another"><p>Log into Another Account</p></a>
+                                                                    <a href="http://localhost/GitHub/travelagency/index.php/Account/logout"><p>Sign Out</p></a>
                                 
                                                                 </div>
                                 
@@ -138,7 +139,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--    MAIN CONTENT    -->
     <div class="booking-form-main-container">
         <Form name="regform" id="regform" method="post" enctype="multipart/form-data"
-                action="http://localhost/travelagency_ci/index.php/UserController/part1_submit">
+                action="http://localhost/GitHub/travelagency/index.php/UserController/part1_submit">
 
             <div class="main-header">
                 <h3>Booking Form</h3>
