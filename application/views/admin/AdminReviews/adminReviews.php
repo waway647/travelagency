@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <h4>Admin</h4>
             </div>
 
-            <<div class="sidebar">
+            <div class="sidebar">
                 <ul>
                     <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminDashboard">
                         <img src="http://localhost/GitHub/travelagency/images/icons/dashboard.png" alt="Dashboard-icon"><span>Dashboard</span></a></li>
