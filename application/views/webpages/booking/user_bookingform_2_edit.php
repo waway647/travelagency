@@ -4,7 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>Bedan Travel & Tours</title>
+    <link rel="icon" href="<?php echo base_url('images/logo/url_logo.png'); ?>">
 	<link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/style.css?<?php echo time(); ?>"> 
     <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/booking/style_bookingform1.css?<?php echo time(); ?>"> 
     <!-- Latest compiled and minified CSS -->
@@ -34,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- H E A D E R -->
     <div class="header">
         <div class="logo-container">
-            <a href="http://localhost/travelagency_ci/index.php/Account/redirect_userHomePage">
+            <a href="http://localhost/GitHub/travelagency/index.php/Account/redirect_userHomePage">
                 <img src="<?php echo base_url('images/logos/black.png'); ?>" alt="">
             </a>
         </div>
@@ -91,8 +92,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
 
                             <div class="signout-bar-container">
-                                <a href="http://localhost/travelagency_ci/index.php/Account/redirect_signIn_to_another"><p>Log into Another Account</p></a>
-                                <a href="http://localhost/travelagency_ci/index.php/Account/logout"><p>Sign Out</p></a>
+                                <a href="http://localhost/GitHub/travelagency/index.php/Account/redirect_signIn_to_another"><p>Log into Another Account</p></a>
+                                <a href="http://localhost/GitHub/travelagency/index.php/Account/logout"><p>Sign Out</p></a>
                             </div>
                         </div>
                     </div>
@@ -117,7 +118,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="mytable">
                         <div class="personal-information-column-contact edit-passenger">
                         <h6>EDIT PASSENGER</h6>
-                            <form method="post" action="<?php echo 'http://localhost/travelagency_ci/index.php/UserController/part2_passenger_update/' . $passenger->id; ?>">
+                            <form method="post" action="<?php echo 'http://localhost/GitHub/travelagency/index.php/UserController/part2_passenger_update/' . $passenger->id; ?>">
                                 <div class="personal-information-row-contact">
                                     <div class="personal-information-line" id="title">
                                         <h6>Title</h6>
@@ -159,7 +160,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
 
                                 <div class="button-container">
-                                    <a href="http://localhost/travelagency_ci/index.php/UserController/part2">
+                                    <a href="http://localhost/GitHub/travelagency/index.php/UserController/part2">
                                         <button type="button" class="btn btn-cancel">Cancel</button>
                                     </a>
                                     <button type="submit" class="btn btn-primary">Submit</button>
