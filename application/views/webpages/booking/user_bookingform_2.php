@@ -322,8 +322,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			tr += "<td>"+ passengerBirthday +"</td>";
 			tr += "<td>"+ passengerGender +"</td>";
 			tr += "<td>"+ passengerNationality +"</td>";
-			tr += "<td><a href='http://localhost/travelagency_ci/index.php/UserController/part2_passenger_edit/" + id + "'>Edit</a>";
-			tr += "&nbsp<td><a href='http://localhost/travelagency_ci/index.php/UserController/part2_passenger_delete/" + id + "'>Delete</a></td>";
+			tr += "<td><a href='http://localhost/GitHub/travelagency/index.php/UserController/part2_passenger_edit/" + id + "'>Edit</a>";
+			tr += "&nbsp<td><a href='http://localhost/GitHub/travelagency/index.php/UserController/part2_passenger_delete/" + id + "'>Delete</a></td>";
 			
           
           //tr += "<td><a href='"+ link +"' target='_blank' >"+ title +"</a></td>";
