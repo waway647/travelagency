@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="navbar-left">
         <nav>
             <div class="logo-container">
-                <img id="logo" src="http://localhost/GitHub/travelagency/images/logo/web_logo.png" alt="">
+                <img id="logo" src="http://localhost/GitHub/travelagency/images/logo/Logo_final.png" alt="">
             </div>
 
             <div class="NavPic-container">
