@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <div class="logo-container">
         <a href="http://localhost/travelagency_ci/index.php/Account/showHomepage">
-            <img src="<?php echo base_url('images/logo/web_logo.png'); ?>" alt="">
+            <img src="<?php echo base_url('images/logo/Logo_final.png'); ?>" alt="">
         </a>
     </div>
 
