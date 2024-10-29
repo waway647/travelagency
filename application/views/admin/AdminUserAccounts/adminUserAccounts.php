@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
-    <link rel="icon" href="<?php echo base_url('images/logo/Logo_final.png'); ?>">
+    <link rel="icon" href="<?php echo base_url('images/logo/url_logo.png'); ?>">
 	<link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/adminStyle.css?<?php echo time(); ?>"> 
     <!-- Latest compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
@@ -22,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="navbar-left">
         <nav>
             <div class="logo-container">
-                <img id="logo" src="http://localhost/travelagency_ci/images/logo/web_logo.png" alt="">
+                <img id="logo" src="http://localhost/GitHub/travelagency/images/logo/Logo_final.png" alt="">
             </div>
 
             <div class="NavPic-container">
@@ -35,29 +35,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="sidebar">
                 <ul>
-                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminDashboard">
-                        <img src="http://localhost/travelagency_ci/images/icons/dashboard.png" alt="Dashboard-icon"><span>Dashboard</span></a></li>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminDashboard">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/dashboard.png" alt="Dashboard-icon"><span>Dashboard</span></a></li>
 
-                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showUserAccounts">
-                        <img src="http://localhost/travelagency_ci/images/icons/userAccounts.png" alt="User-Accounts-icons"><span>User Accounts</span></a></li>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showUserAccounts">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/userAccounts.png" alt="User-Accounts-icons"><span>User Accounts</span></a></li>
 
-                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showTourPackages">
-                        <img src="http://localhost/travelagency_ci/images/icons/tourPackages.png" alt="Tour-Packages-icon"><span>Tour Packages</span></a></li>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showTourPackages">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/tourPackages.png" alt="Tour-Packages-icon"><span>Tour Packages</span></a></li>
 
-                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminBookings">
-                        <img src="http://localhost/travelagency_ci/images/icons/bookings.png" alt="Bookings-icon"><span>Bookings</span></a></li>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminBookings">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/bookings.png" alt="Bookings-icon"><span>Bookings</span></a></li>
 
-                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminArchives">
-                        <img src="http://localhost/travelagency_ci/images/icons/archives.png" alt="Archives-icon"><span>Archives</span></a></li>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminArchives">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/archives.png" alt="Archives-icon"><span>Archives</span></a></li>
 
-                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showTransactions">
-                        <img src="http://localhost/travelagency_ci/images/icons/transactions.png" alt="Transactions-icon"></span>Transactions</span></a></li>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showTransactions">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/transactions.png" alt="Transactions-icon"></span>Transactions</span></a></li>
 
-                    <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminReviews">
-                        <img src="http://localhost/travelagency_ci/images/icons/reviews.png" alt="Reviews-icon"><span>Reviews</span></a></li>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminReviews">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/reviews.png" alt="Reviews-icon"><span>Reviews</span></a></li>
 
-                    <li><a href="http://localhost/travelagency_ci/index.php/Account/LogOut">
-                        <img src="http://localhost/travelagency_ci/images/icons/logout.png" alt="LogOut-icon"><span>Log Out</span></li></a>
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/LogOut">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/logout.png" alt="LogOut-icon"><span>Log Out</span></li></a>
                 </ul>
             </div>
         </nav>
@@ -74,7 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         class="form-control" name="search" id="search" placeholder="Search Package">
                     </div>
                     <div class="notification-bell">
-                        <a href="notif.html"><img src="http://localhost/travelagency_ci/images/icons/notification.png" alt=""></a>
+                        <a href="notif.html"><img src="http://localhost/GitHub/travelagency/images/icons/notification.png" alt=""></a>
                     </div>
             </div>
 
@@ -172,8 +172,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             tr += "<td>"+ loginID +"</td>";
                             tr += "<td>"+ created_at +"</td>";  
                             tr += "<td>"+ updated_at +"</td>";
-                            tr += "<td><a href='http://localhost/travelagency_ci/index.php/AdminController/editUserAccount/"+ id +"'>Edit</a></td>>";
-                            tr += "<td><a href='http://localhost/travelagency_ci/index.php/AdminController/deleteUserAccount/"+ id +"'>Delete</a></td>>";
+                            tr += "<td><a href='http://localhost/GitHub/travelagency/index.php/AdminController/editUserAccount/"+ id +"'>Edit</a></td>>";
+                            tr += "<td><a href='http://localhost/GitHub/travelagency/index.php/AdminController/deleteUserAccount/"+ id +"'>Delete</a></td>>";
         
                             tr += "</tr>";
                             $('#assetList tbody').append(tr);
