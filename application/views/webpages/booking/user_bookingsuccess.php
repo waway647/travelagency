@@ -9,8 +9,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/style.css?<?php echo time(); ?>"> 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/booking/style_bookingForm1.css?<?php echo time(); ?>">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 	<!-- jQuery library -->
 	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	<!-- Popper JS -->
