@@ -53,7 +53,7 @@ class UserController extends Account {
 				$userupdate = $this->User_model->updateprofile($user_id, $userinfo);
 				if($userupdate == true)
 				{
-					redirect('http://localhost/travelagency_ci/index.php/UserController/show_myprofile');
+					redirect('http://localhost/GitHub/travelagency/index.php/UserController/show_myprofile');
 				}
 			}
 			
@@ -75,7 +75,7 @@ class UserController extends Account {
 		}
 		else
 		{
-			redirect('http://localhost/travelagency_ci/index.php/Account/redirect_signIn');
+			redirect('http://localhost/GitHub/travelagency/index.php/Account/redirect_signIn');
 		}
 	}
 
@@ -120,7 +120,7 @@ class UserController extends Account {
 		$tourpackagedata = $this->session->userdata('tourpackage_id');
 		if(!$tourpackagedata)
 		{
-			redirect('http://localhost/travelagency_ci/index.php/UserController/show_user_tourpackages');
+			redirect('http://localhost/GitHub/travelagency/index.php/UserController/show_user_tourpackages');
 		}   
 		else
 		{
@@ -176,12 +176,12 @@ class UserController extends Account {
 			
 					if($this->session->userdata('itineraries'))
 					{
-						redirect('http://localhost/travelagency_ci/index.php/UserController/part2');
+						redirect('http://localhost/GitHub/travelagency/index.php/UserController/part2');
 					}
 				} 
 				else 
 				{
-					redirect('http://localhost/travelagency_ci/index.php/UserController/part1');
+					redirect('http://localhost/GitHub/travelagency/index.php/UserController/part1');
 				}
 			}
 
@@ -193,7 +193,7 @@ class UserController extends Account {
 				}
 				else
 				{
-					redirect('http://localhost/travelagency_ci/index.php/UserController/part1');
+					redirect('http://localhost/GitHub/travelagency/index.php/UserController/part1');
 				}  
 			}
 
@@ -213,7 +213,7 @@ class UserController extends Account {
 				if($result)
 				{
 					$this->session->set_userdata('passenger_data', $passenger);
-					redirect('http://localhost/travelagency_ci/index.php/UserController/part2');
+					redirect('http://localhost/GitHub/travelagency/index.php/UserController/part2');
 				}
 
 				
@@ -238,7 +238,7 @@ class UserController extends Account {
 					$result = $this->User_model->updatepassenger($passenger_id,$passenger);
 					if($result == true)
 					{
-						redirect('http://localhost/travelagency_ci/index.php/UserController/part2');
+						redirect('http://localhost/GitHub/travelagency/index.php/UserController/part2');
 					}
 				}
 
@@ -247,7 +247,7 @@ class UserController extends Account {
 					$result = $this->User_model->deletepassenger($passenger_id);
 					if($result == true)
 					{
-						redirect('http://localhost/travelagency_ci/index.php/UserController/part2');
+						redirect('http://localhost/GitHub/travelagency/index.php/UserController/part2');
 					}
 				}
 			
@@ -277,12 +277,12 @@ class UserController extends Account {
 						$totalPrice = round($totalPrice, 2);
 						$this->session->set_userdata('totalPrice', $totalPrice);
 						echo "Total Price: " . $this->session->userdata('totalPrice');
-						redirect('http://localhost/travelagency_ci/index.php/UserController/part3');
+						redirect('http://localhost/GitHub/travelagency/index.php/UserController/part3');
 					} 
 					else 
 					{
 						$this->session->set_flashdata('error_message', 'Cannot continue. Please enter at least one passenger.');
-						redirect('http://localhost/travelagency_ci/index.php/UserController/part2');
+						redirect('http://localhost/GitHub/travelagency/index.php/UserController/part2');
 					}
 			
 					// Redirect to part 3
@@ -301,7 +301,7 @@ class UserController extends Account {
 				}
 				else
 				{
-					redirect('http://localhost/travelagency_ci/index.php/UserController/part1');
+					redirect('http://localhost/GitHub/travelagency/index.php/UserController/part1');
 				}
 			}
 
@@ -385,7 +385,7 @@ class UserController extends Account {
 							'tourStartDate',
 							'tourEndDate',
 						));
-					redirect('http://localhost/travelagency_ci/index.php/UserController/success');
+					redirect('http://localhost/GitHub/travelagency/index.php/UserController/success');
 				}
 			}
 			
@@ -393,7 +393,7 @@ class UserController extends Account {
 			public function success() {
 				if(!$this->session->userdata('booking_success'))
 				{
-					redirect('http://localhost/travelagency_ci/index.php/UserController/show_user_tourpackages');
+					redirect('http://localhost/GitHub/travelagency/index.php/UserController/show_user_tourpackages');
 				}
 
 				$this->load->view('webpages/booking/user_bookingsuccess');
@@ -419,8 +419,6 @@ class UserController extends Account {
 				$this->db->from('passenger_bin');
 				$this->db->limit($rowperpage, $rowno);
 				$tourPackages = $this->db->get()->result_array();
-			
-				
 			
 				// Pagination configuration
 				$config['base_url'] = base_url() . 'UserController/loadRecord_passenger';
