@@ -58,6 +58,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li><a href="http://localhost/travelagency_ci/index.php/AdminController/showAdminReviews">
                         <img src="http://localhost/travelagency_ci/images/icons/reviews.png" alt="Reviews-icon"><span>Reviews</span></a></li>
 
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showAdminCreateAcc">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/add-user.png" alt="Add-AdminAcc-icon"><span>Add Admin</span></li></a>
+
                     <li><a href="http://localhost/travelagency_ci/index.php/Account/LogOut">
                         <img src="http://localhost/travelagency_ci/images/icons/logout.png" alt="LogOut-icon"><span>Log Out</span></li></a>
                 </ul>
