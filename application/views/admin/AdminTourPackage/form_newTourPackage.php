@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="container">
 			<form method="post" action="http://localhost/travelagency_ci/index.php/AdminController/create_tourPackage">
 
-                    <h4>Tour Package</h4>
+                <h4>Tour Package</h4>
 
 				<div class="form-group">
 					<label for="city">City:</label>

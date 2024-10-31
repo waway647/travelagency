@@ -73,26 +73,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h1>Create Admin Account</h1>
             <form method="post" action="http://localhost/GitHub/travelagency/index.php/Account/createAdminAcc">
                 <div class="input-container">
-                    <label for="fname">Username:</label>
+
+                    <div class="form-group">
+                        <label for="fname">Username:</label>
                         <input type="text" name="fname" id="fname" placeholder="Enter first name" onclick="" required>
-                    <br>
-                    <label for="mname">Middle Initial:</label>
-                        <input type="text" name="mname" id="mname" placeholder="Enter middle initial" onclick="" required>
-                    <br>
-                    <label for="lname">Last Name:</label>
-                        <input type="text" name="lname" id="lname" placeholder="Enter last name" onclick="" required>
-                    <br>
-                    <label for="username">Username:</label>
-                        <input type="text" name="username" id="username" placeholder="Enter username" onclick="" required>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter email" onclick="" required>
-                    <br>
-                    <label for="pass">Password:</label>
-                        <input type="password" name="pass" id="pass" placeholder="Enter password" onclick="" required>
-                    <div class="button">
-                        <button type="submit" id="button" onclick="">Continue</button>
                     </div>
+
+                    <div class="form-group">
+                        <label for="mname">Middle Initial:</label>
+                        <input type="text" name="mname" id="mname" placeholder="Enter middle initial" onclick="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname" placeholder="Enter last name" onclick="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" placeholder="Enter username" onclick="" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter email" onclick="" required>
+                    </div>
+
+                    <div id="itinerary-container">
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass" id="pass" placeholder="Enter password" onclick="" required>
+                    </div>
+                    
+				    <button type="submit" class="btn btn-secondary" id="add-itinerary">Submit</button>
                 </div>
             </form>
         </div>
