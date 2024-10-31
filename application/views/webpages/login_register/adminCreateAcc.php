@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <img src="http://localhost/GitHub/travelagency/images/icons/reviews.png" alt="Reviews-icon"><span>Reviews</span></a></li>
 
                     <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminCreateAcc">
-                        <img src="http://localhost/GitHub/travelagency/images/icons/add-admin.png" alt="Add-AdminAcc-icon"><span>Add Admin</span></li></a>
+                        <img src="http://localhost/GitHub/travelagency/images/icons/add-user.png" alt="Add-AdminAcc-icon"><span>Add Admin</span></li></a>
 
                     <li><a href="http://localhost/GitHub/travelagency/index.php/Account/LogOut">
                         <img src="http://localhost/GitHub/travelagency/images/icons/logout.png" alt="LogOut-icon"><span>Log Out</span></li></a>
@@ -70,38 +70,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="main-content">
 
         <div id="form-container">
-            <h1>Create Admin Account</h1>
+            <h2>Create Admin Account</h2>
+            <hr id="line">
             <form method="post" action="http://localhost/GitHub/travelagency/index.php/Account/createAdminAcc">
                 <div class="input-container">
 
                     <div class="form-group">
                         <label for="fname">Username:</label>
-                        <input type="text" name="fname" id="fname" placeholder="Enter first name" onclick="" required>
+                        <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter first name" onclick="" required>
                     </div>
 
                     <div class="form-group">
                         <label for="mname">Middle Initial:</label>
-                        <input type="text" name="mname" id="mname" placeholder="Enter middle initial" onclick="" required>
+                        <input type="text" class="form-control" name="mname" id="mname" placeholder="Enter middle initial" onclick="" required>
                     </div>
 
                     <div class="form-group">
                         <label for="lname">Last Name:</label>
-                        <input type="text" name="lname" id="lname" placeholder="Enter last name" onclick="" required>
+                        <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter last name" onclick="" required>
                     </div>
 
                     <div class="form-group">
                         <label for="username">Username:</label>
-                        <input type="text" name="username" id="username" placeholder="Enter username" onclick="" required>
+                        <input type="text" class="form-control" name="username" id="username" placeholder="Enter username" onclick="" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Enter email" onclick="" required>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" onclick="" required>
                     </div>
 
                     <div id="itinerary-container">
                         <label for="pass">Password:</label>
-                        <input type="password" name="pass" id="pass" placeholder="Enter password" onclick="" required>
+                        <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter password" onclick="" required>
                     </div>
                     
 				    <button type="submit" class="btn btn-secondary" id="add-itinerary">Submit</button>

@@ -67,7 +67,7 @@
     <div class="main-content">
         <div id="container">
             <h2>Edit Itinerary for <?php echo $tourpackage->city ?></h2>
-            
+            <hr id="line">
             <!-- Ensure the form action includes the tour package ID -->
             <form method="POST" action="<?php echo base_url('index.php/AdminController/updateItinerary/' . $tourpackage->tourpackage_id); ?>">
                 <?php foreach($itineraries as $itinerary): ?>

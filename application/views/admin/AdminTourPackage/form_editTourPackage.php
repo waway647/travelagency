@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div id="container">
             <form method="post" action="<?php echo 'http://localhost/GitHub/travelagency/index.php/AdminController/update_TourPackage/' . $tourpackages->tourpackage_id; ?>">
                 <h2>Edit Tour Package ID: <?php echo $tourpackages->tourpackage_id ?></h2>
-
+                <hr id="line">
                 <div class="form-group">
                     <label for="city">City:</label>
                     <input type="text" class="form-control" placeholder="Enter city" id="email" name="city" value="<?php echo $tourpackages->city; ?>" required>
