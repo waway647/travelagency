@@ -66,8 +66,16 @@ class Account extends CI_Controller {
 				$result = $this->Account_model->getAdminlogin($username_frompost, $pass_frompost);
 				if ($result == true) {
 					/* var_dump($this->session->all_userdata()); */
-					$this->redirect_adminPage();
-				} 
+					$accountresult = $this->Account_model->getAdminAccount($username_frompost);
+					if($accountresult)
+					{
+						$this->session->set_userdata(array(
+							'fname' => $accountresult->fname,
+							'minitial' => $accountresult->minitial,
+							'lname' => $accountresult->lname,
+						));} 
+						$this->redirect_adminPage();
+					}
 				else 
 				{
 					$this->session->set_flashdata('error_message', 'Invalid Username or Password. Try again!.');

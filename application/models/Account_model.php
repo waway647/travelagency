@@ -46,7 +46,9 @@ class Account_model extends CI_Model {
 	public function getaccount($username_frompost)
 	{
 		// Select all the necessary fields from userregistration and userlogin
-		$this->db->select('userregistration.loginID, userregistration.firstName, userregistration.midInitial, userregistration.lastName, userregistration.email, userregistration.mobileNum, userregistration.bday, userregistration.gender, userregistration.nationality');
+		$this->db->select('userregistration.loginID, userregistration.firstName, userregistration.midInitial, 
+		userregistration.lastName, userregistration.email, userregistration.mobileNum, userregistration.bday, 
+		userregistration.gender, userregistration.nationality');
 		$this->db->from('userregistration');
 		$this->db->join('userlogin', 'userlogin.id = userregistration.loginID'); // Join the two tables on loginID
 		$this->db->where('userlogin.username', $username_frompost); // Filter by username from the userlogin table
@@ -57,6 +59,19 @@ class Account_model extends CI_Model {
 			return $query->row(); // Return all user details as an object
 		} else {
 			return false; // No user found
+		}
+	}
+
+	public function getaccountbyID($username_frompost){
+		$this->db->select('useradmin.fname, useradmin.minitial, useradmin.lname');
+		$this->db->from('useradmin');
+		$this->db->where('useradmin.username', $username_frompost);
+		$query = $this->db->get();
+
+		if ($query->num_rows() > 0) {
+			return $query->row(); 
+		} else {
+			return false; 
 		}
 	}
 
