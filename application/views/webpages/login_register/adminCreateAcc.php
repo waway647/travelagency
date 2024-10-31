@@ -59,6 +59,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminReviews">
                         <img src="http://localhost/GitHub/travelagency/images/icons/reviews.png" alt="Reviews-icon"><span>Reviews</span></a></li>
 
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showAdminCreateAcc">
+                        <img src="http://localhost/GitHub/travelagency/images/icons/add-admin.png" alt="Add-AdminAcc-icon"><span>Add Admin</span></li></a>
+
                     <li><a href="http://localhost/GitHub/travelagency/index.php/Account/LogOut">
                         <img src="http://localhost/GitHub/travelagency/images/icons/logout.png" alt="LogOut-icon"><span>Log Out</span></li></a>
                 </ul>
@@ -69,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <div id="form-container">
             <h1>Create Admin Account</h1>
-            <form method="post" action="http://localhost/travelagency_ci/index.php/Account/createAdminAcc">
+            <form method="post" action="http://localhost/GitHub/travelagency/index.php/Account/createAdminAcc">
                 <div class="input-container">
                     <label for="fname">Username:</label>
                         <input type="text" name="fname" id="fname" placeholder="Enter first name" onclick="" required>
