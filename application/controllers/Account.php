@@ -24,8 +24,9 @@ class Account extends CI_Controller {
 
 	public function redirect_adminPage()
 	{
-		if (!$this->session->userdata('username')) {
-			$this->load->view('webpages/login_register/signIn');
+		if($this->session->userdata('username'))
+		{
+			$this->load->view('webpages/user_homepage');
 		}
 		else
 		{
@@ -80,9 +81,14 @@ class Account extends CI_Controller {
 							'fname' => $accountresult->fname,
 							'minitial' => $accountresult->minitial,
 							'lname' => $accountresult->lname,
-						));} 
+						));
 						$this->redirect_adminPage();
+					}	
+					else 
+					{
+						echo "no session";
 					}
+				}
 				else 
 				{
 					$this->session->set_flashdata('error_message', 'Invalid Username or Password. Try again!.');
