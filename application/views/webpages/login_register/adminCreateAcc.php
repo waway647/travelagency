@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminReviews">
                         <img src="http://localhost/GitHub/travelagency/images/icons/reviews.png" alt="Reviews-icon"><span>Reviews</span></a></li>
 
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showAdminCreateAcc">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminCreateAcc">
                         <img src="http://localhost/GitHub/travelagency/images/icons/add-admin.png" alt="Add-AdminAcc-icon"><span>Add Admin</span></li></a>
 
                     <li><a href="http://localhost/GitHub/travelagency/index.php/Account/LogOut">
