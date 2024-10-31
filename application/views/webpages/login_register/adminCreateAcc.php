@@ -104,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <label for="pass">Password:</label>
                         <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter password" onclick="" required>
                     </div>
-                    
+                    <br>
 				    <button type="submit" class="btn btn-secondary" id="add-itinerary">Submit</button>
                 </div>
             </form>
