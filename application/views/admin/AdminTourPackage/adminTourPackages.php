@@ -97,7 +97,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!-- View Modal -->
                         <div class="modal" id="myModal">
                             <div class="modal-dialog">
-                                <div class="modal-bg">
                                     <div class="modal-content">
                                         <!-- Modal Header -->
                                         <div class="modal-header">
@@ -114,7 +113,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
