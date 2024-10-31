@@ -62,7 +62,7 @@ class Account_model extends CI_Model {
 		}
 	}
 
-	public function getaccountbyID($username_frompost){
+	public function getAdminAccount($username_frompost){
 		$this->db->select('useradmin.fname, useradmin.minitial, useradmin.lname');
 		$this->db->from('useradmin');
 		$this->db->where('useradmin.username', $username_frompost);
