@@ -25,6 +25,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Create Admin Account</h1>
     <form method="post" action="http://localhost/travelagency_ci/index.php/Account/createAdminAcc">
         <div class="input-container">
+            <label for="fname">Username:</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter first name" onclick="" required>
+            <br>
+            <label for="mname">Middle Initial:</label>
+                <input type="text" name="mname" id="mname" placeholder="Enter middle initial" onclick="" required>
+            <br>
+            <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter last name" onclick="" required>
+            <br>
             <label for="username">Username:</label>
                 <input type="text" name="username" id="username" placeholder="Enter username" onclick="" required>
             <br>
