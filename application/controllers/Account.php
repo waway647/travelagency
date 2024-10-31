@@ -26,11 +26,11 @@ class Account extends CI_Controller {
 	{
 		if($this->session->userdata('username'))
 		{
-			$this->load->view('webpages/user_homepage');
+			$this->load->view('admin/adminDashboard');
 		}
 		else
 		{
-			$this->load->view('admin/adminDashboard');
+			$this->load->view('webpages/login_register/signIn');
 		}
 	}
 
@@ -72,7 +72,7 @@ class Account extends CI_Controller {
 			{
 				$result = $this->Account_model->getAdminlogin($username_frompost, $pass_frompost);
 				if ($result == true) {
-					/* var_dump($this->session->all_userdata()); */
+					var_dump($this->session->all_userdata()); 
 					$accountresult = $this->Account_model->getAdminAccount($username_frompost);
 					if($accountresult)
 					{
