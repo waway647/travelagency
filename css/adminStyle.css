@@ -663,6 +663,13 @@ nav .sidebar ul li a:active{
     position: inherit !important;
 }
 
+.modal-content {
+    width: 80% !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    height: 80% !important;
+}
+
 .modal-body p {
     text-wrap: wrap;
 }
