@@ -24,7 +24,13 @@ class Account extends CI_Controller {
 
 	public function redirect_adminPage()
 	{
-		$this->load->view('admin/adminDashboard');
+		if (!$this->session->userdata('username')) {
+			$this->load->view('webpages/login_register/signIn');
+		}
+		else
+		{
+			$this->load->view('admin/adminDashboard');
+		}
 	}
 
 	public function redirect_signIn()
@@ -70,6 +76,7 @@ class Account extends CI_Controller {
 					if($accountresult)
 					{
 						$this->session->set_userdata(array(
+							'username' => $username_frompost,
 							'fname' => $accountresult->fname,
 							'minitial' => $accountresult->minitial,
 							'lname' => $accountresult->lname,
