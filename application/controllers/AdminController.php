@@ -22,7 +22,7 @@ class AdminController extends CI_Controller {
 	}
 
 	public function showAdminCreateAcc(){
-		$this->load->view('admin/webpages/login_register/adminCreateAcc');
+		$this->load->view('webpages/login_register/adminCreateAcc');
 	}
 
     // for A R C H I V E S
