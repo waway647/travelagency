@@ -21,6 +21,10 @@ class AdminController extends CI_Controller {
 		$this->load->view('adminPage');
 	}
 
+	public function showAdminCreateAcc(){
+		$this->load->view('admin/webpages/login_register/adminCreateAcc');
+	}
+
     // for A R C H I V E S
 	public function showAdminArchives()
 	{
