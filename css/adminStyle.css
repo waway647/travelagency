@@ -663,7 +663,7 @@ nav .sidebar ul li a:active{
     position: inherit !important;
 }
 
-.modal-body{
+.modal-content{
     background-color: rgba(0, 0, 0, 0.664);
 }
 
@@ -672,7 +672,7 @@ nav .sidebar ul li a:active{
 }
 
 #line{
-    border: 5px solid #373737c6;
+    border: 1px solid #373737c6;
 }
 
 
