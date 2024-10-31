@@ -663,8 +663,16 @@ nav .sidebar ul li a:active{
     position: inherit !important;
 }
 
+.modal-body{
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
 .modal-body p {
     text-wrap: wrap;
+}
+
+#line{
+    border: 5px solid #373737c6;
 }
 
 
