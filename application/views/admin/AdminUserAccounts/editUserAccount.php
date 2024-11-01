@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 
 				<div class="adminName-container">
-					<h4>Admin</h4>
+					<h4><?php echo $this->session->userdata('lname');?>, <?php echo $this->session->userdata('fname');?> <?php echo $this->session->userdata('minitial'); ?></h4>
 				</div>
 
 				<div class="sidebar">
