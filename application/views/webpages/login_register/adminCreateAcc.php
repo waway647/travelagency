@@ -81,8 +81,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
 
                     <div class="form-group">
-                        <label for="mname">Middle Initial:</label>
-                        <input type="text" class="form-control" name="mname" id="mname" placeholder="Enter middle initial" onclick="" required>
+                        <label for="minitial">Middle Initial:</label>
+                        <input type="text" class="form-control" name="minitial" id="minitial" placeholder="Enter middle initial" onclick="" required>
                     </div>
 
                     <div class="form-group">
