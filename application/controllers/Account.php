@@ -222,6 +222,9 @@ class Account extends CI_Controller {
 	
 			$config['encryption_key'] = hex2bin($key);
 
+			$myAdmin['fname'] = $this->input->post('fname');
+			$myAdmin['minitial'] = $this->input->post('minitial');
+			$myAdmin['lname'] = $this->input->post('lname');
 			$myAdmin['username'] = $this->input->post('username');
 			$myAdmin['email'] = $this->input->post('email');
 			$myAdmin["pass"] = $this->encryption->encrypt($this->input->post('pass'));
