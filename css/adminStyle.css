@@ -191,52 +191,52 @@ nav .sidebar ul li a:active{
 }
 
 .top-bar h1:hover {
-    color: black;
-    font-size: xx-large;
-    cursor: pointer;
+    color: black  !important;
+    font-size: xx-large  !important;
+    cursor: pointer  !important;
 }
 
 .packageSearch input[type="text"] {
-    position: absolute;
-    width: 51%;
-    padding: 10px;
+    position: absolute  !important;
+    width: 51%  !important;
+    padding: 10px  !important;
     background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    top: 16%;
-    left: 43%;
-    right: 40%;
+    border: none  !important;
+    border-radius: 5px  !important;
+    font-size: 16px  !important;
+    top: 16%  !important;
+    left: 43%  !important;
+    right: 40%  !important;
 }
 
 .packageSearch input[type="text"]:hover {
-    background-color: rgba(0, 0, 0, 0.115);
-    color: #000000;
-    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.115) !important;
+    color: #000000  !important;
+    cursor: pointer  !important;
 }
 
 .notification-bell {
-    position: absolute;
-    top: 16%;
-    left: 94.5%;
-    border: none;
-    background-color: #fff;
-    border-radius: 5px;
-    width: 40px;
-    height: 40px;
-    padding-left: 3px;
+    position: absolute  !important;
+    top: 16%  !important;
+    left: 94.5%  !important;
+    border: none  !important;
+    background-color: #fff  !important;
+    border-radius: 5px  !important;
+    width: 40px  !important;
+    height: 40px  !important;
+    padding-left: 3px  !important;
 }
 
 .notification-bell img {
-    width: 90%;
-    height: 90%;
-    padding: 3.5px 0 0 1px;
-    margin-bottom: 0;
-    opacity: 0.3;
+    width: 90% !important;
+    height: 90% !important;
+    padding: 3.5px 0 0 1px !important;
+    margin-bottom: 0  !important;
+    opacity: 0.3  !important;
 }
 
 .notification-bell:hover {
-    background-color: rgba(0, 0, 0, 0.115);
+    background-color: rgba(0, 0, 0, 0.115)  !important;
 }
 
 /* D A S H B O A R D  C O N T E N T */
