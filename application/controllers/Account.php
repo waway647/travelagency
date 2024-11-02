@@ -246,9 +246,13 @@ class Account extends CI_Controller {
 			$admin_account = $this->Account_model->getAdminAccount($username_frompost);
 			
 			if ($admin_account && $admin_account->profile_pic) {
-				
-				header("Content-Type: image/jpeg"); 
-				echo $admin_account->profile_pic;
+				$file_path = FCPATH . $admin_account->profile_pic; // Full path to the image file
+				if (file_exists($file_path)) {
+					header("Content-Type: image/jpeg");
+					readfile($file_path); // Output the image
+				} else {
+					show_404(); 
+				}
 			} else {
 				show_404(); 
 			}
