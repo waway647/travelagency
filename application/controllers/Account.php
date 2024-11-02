@@ -234,11 +234,23 @@ class Account extends CI_Controller {
 
 			$insertAdmin = $this->Account_model->insertAdminAcc($myAdmin);
 			if ($insertAdmin == true){
-				$this->redirect_signIn();
+				$this->redirect_adminPage();
 			}
 			else{
 				echo "Invalid input! Try Again!";
 				$this->load->view('webpages/login_register/adminCreateAcc');
+			}
+		}
+
+		public function show_profile_pic($username_frompost) {
+			$admin_account = $this->Account_model->getAdminAccount($username_frompost);
+			
+			if ($admin_account && $admin_account->profile_pic) {
+				
+				header("Content-Type: image/jpeg"); 
+				echo $admin_account->profile_pic;
+			} else {
+				show_404(); 
 			}
 		}
 

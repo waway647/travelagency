@@ -37,7 +37,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
             <div class="NavPic-container">
-                <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                <img src="<?php echo base_url('admin/show_profile_pic/' . $username_frompost); ?>" alt="Profile Picture">
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt=""> -->
             </div>
 
             <div class="adminName-container">
