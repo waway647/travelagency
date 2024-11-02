@@ -100,7 +100,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" onclick="" required>
                     </div>
 
-                    <div id="itinerary-container">
+                    <div id="form-group">
                         <label for="pass">Password:</label>
                         <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter password" onclick="" required>
                     </div>
@@ -109,7 +109,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <label for="profile_pic">Profile Picture:</label>
                         <input type="file" class="form-control" name="profile_pic" id="profile_pic" accept="image/*">
                     </div>
-                    <br>
+            
 				    <button type="submit" class="btn btn-secondary" id="add-itinerary">Submit</button>
                 </div>
             </form>
