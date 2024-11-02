@@ -228,6 +228,7 @@ class Account extends CI_Controller {
 			$myAdmin['username'] = $this->input->post('username');
 			$myAdmin['email'] = $this->input->post('email');
 			$myAdmin["pass"] = $this->encryption->encrypt($this->input->post('pass'));
+			$myAdmin["profile_pic"] = $this->input->post('profile_pic');
 			$myAdmin["created_at"] = date("Y-m-d H:i:s");
 			$myAdmin["updated_at"] = date("Y-m-d H:i:s");
 

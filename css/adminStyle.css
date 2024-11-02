@@ -60,7 +60,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
 }
 
 .NavPic-container img {

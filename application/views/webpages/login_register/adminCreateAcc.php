@@ -104,6 +104,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <label for="pass">Password:</label>
                         <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter password" onclick="" required>
                     </div>
+
+                    <div class="form-group">
+                        <label for="cpass">Confirm Password:</label>
+                        <input type="password" class="form-control" name="cpass" id="cpass" placeholder="Confirm password" onclick="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile_pic">Profile Picture:</label>
+                        <input type="file" class="form-control" name="profile_pic" id="profile_pic" accept="image/*">
+                    </div>
                     <br>
 				    <button type="submit" class="btn btn-secondary" id="add-itinerary">Submit</button>
                 </div>
