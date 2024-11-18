@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h1>Dashboard</h1>
             
                 <div class="packageSearch">
-                    <label for "search"></label>
+                    <label for="search"></label>
                     <input type="text" 
                     onKeyUp="ajaxSearch(this.value)"
                     class="form-control" name="search" id="search" placeholder="Search Package">
