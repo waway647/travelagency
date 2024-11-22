@@ -251,16 +251,31 @@ nav .sidebar ul li a:active{
     justify-content: space-between !important;
     margin: 0 auto !important;
     border: 1px solid rgb(228, 227, 225) !important;
-    width: 100% !important;
+    width: 80% !important;
     height: 8% !important;
     border-radius: 5px !important;
     background-color: rgba(225, 223, 219, 0.352) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.419) !important;
+    left: 17.5% !important;
     position: fixed !important;
 }
 
+.packageSearch input[type="text"] {
+    position: absolute  !important;
+    width: 51%  !important;
+    padding: 10px  !important;
+    background-color: #fff;
+    border: none  !important;
+    border-radius: 5px  !important;
+    font-size: 16px  !important;
+    top: 16%  !important; 
+    left: 43%  !important;
+    right: 40%  !important;
+    position: fixed  !important;
+}
+
 .notification-bell {
-    left: 94%  !important;
+    left: 89%  !important;
     border: none  !important;
     background-color: #fff  !important;
     border-radius: 5px  !important;
