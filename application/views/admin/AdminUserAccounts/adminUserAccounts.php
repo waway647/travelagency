@@ -87,7 +87,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <table class="table table-bordered" id="assetList">
                         <thead>
                             <tr>
-                                <th>ID</th>
                                 <th>Username</th>
                                 <th>Password</th>
                                 <th>First Name</th>
