@@ -180,8 +180,7 @@ nav .sidebar ul li a:active{
     background-color: rgba(225, 223, 219, 0.352) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.419) !important;
     left: 17.5% !important;
-    position: fixed !important;
-    z-index: 1000; /* Ensure it stays on top */
+    z-index: 1000 !important;
 }
 
 .top-bar h1:hover {
@@ -653,6 +652,21 @@ nav .sidebar ul li a:active{
     white-space: nowrap;
 }
 
+.tour-package-content::-webkit-scrollbar {
+    height: 8px;
+}
+
+.tour-package-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.343); 
+    border-radius: 10px; 
+}
+
+.tour-package-content::-webkit-scrollbar-track {
+    background-color: rgba(228, 227, 225, 0.5); 
+    border-radius: 8px; 
+}
+
+
 /*  Tour Package    */
 .tour-card {
     border: 1px solid #D0D0D0;
@@ -768,7 +782,6 @@ nav .sidebar ul li a:active{
 
 .btn-primary {
     background-color: #007bff;
-    width: 60px;
 }
 
 .btn-primary:hover {
@@ -790,9 +803,9 @@ nav .sidebar ul li a:active{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1050;
+    z-index: 9999999999;
     outline: 0;
-    background-color: rgba(0, 0, 0, 0.504);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.419);
 }
 
 .modal-open .modal {
@@ -809,21 +822,21 @@ nav .sidebar ul li a:active{
 
 /* General Modal Styling */
 .modal-content {
-    width: auto; /* Adjust width dynamically */
-    margin: 20px auto; /* Add some margin for responsiveness */
+    width: auto; 
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; 
+    background-color: #fff; 
 }
 
 .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.7); /* Darken backdrop */
+    background-color: rgba(0, 0, 0, 0.7); 
 }
 
 /* Modal Body Scroll */
 .modal-body {
-    max-height: 70vh; /* Adjust the height for scrolling */
-    overflow-y: auto; /* Enable vertical scroll */
+    max-height: 70vh; 
+    overflow-y: auto; 
     padding: 15px;
 }
 
@@ -852,28 +865,6 @@ nav .sidebar ul li a:active{
 .btn-danger:hover {
     background-color: #c82333;
 }
-/* Pagination 
-#pagination2 {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-#pagination2 a {
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    color: #007bff;
-    border: 1px solid #ddd;
-}
-
-#pagination2 a:hover {
-    background-color: #f5f5f5;
-}
-
-/*Create Admin Styles*/
-
-
 
 /* Responsive Styles */
 @media (max-width: 1200px) {

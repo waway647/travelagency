@@ -112,7 +112,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
         </div>
-
+    </div>
         <script type='text/javascript'>
             $(document).ready(function(){
                 $('#pagination2').on('click', 'a', function(e){
