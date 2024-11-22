@@ -249,7 +249,7 @@ nav .sidebar ul li a:active{
     position: absolute;
     top: 11%;
     left: 16.5%;
-    width: 85%; 
+    width: 80%; 
     position: fixed;
 }
 
@@ -422,7 +422,7 @@ nav .sidebar ul li a:active{
     height: 83vh;
     margin: auto;
     padding: 5px;
-    width: 81%;
+    width: 83%;
     left: 16.5%;
     top: 12%;
     padding-bottom: 0;
@@ -641,7 +641,7 @@ nav .sidebar ul li a:active{
     height: 83vh;
     margin: auto;
     padding: 5px;
-    width: 81%;
+    width: 83%;
     left: 16.5%;
     top: 12%;
     padding-bottom: 0;
@@ -690,7 +690,7 @@ nav .sidebar ul li a:active{
     box-shadow: 0 0 8px #D0D0D0;
 }
 
-.tour-p-container p {
+/* .tour-p-container p {
     text-wrap: wrap;
 }
 
@@ -707,7 +707,7 @@ nav .sidebar ul li a:active{
 
 .modal-body p {
     text-wrap: wrap;
-}
+}*/ 
 
 #line{
     border: 1px solid #373737c6;
@@ -746,7 +746,7 @@ nav .sidebar ul li a:active{
 }
 
 /* Card Styling */
-.tour-card {
+/* .tour-card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -768,11 +768,11 @@ nav .sidebar ul li a:active{
 .tour-card .tour-p-container {
     font-size: 0.95em;
     line-height: 1.6;
-} 
+}  */
 
 /* Buttons */
 .btn {
-    font-size: 0.9em;
+    font-size: 12px;
     font-weight: 600;
     color: white;
     padding: 8px 15px;
@@ -818,6 +818,7 @@ nav .sidebar ul li a:active{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999999999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.463);
     outline: 0;
 }
 
@@ -831,7 +832,7 @@ nav .sidebar ul li a:active{
     padding: 20px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
-    width: 100%;
+    overflow: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.463);
 }
 
@@ -880,6 +881,10 @@ nav .sidebar ul li a:active{
 .btn-danger:hover {
     background-color: #c82333;
 }
+
+/* .edit-modal-btn, .edit-itinerary-btn {
+    font-size: 12px;
+} */
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
