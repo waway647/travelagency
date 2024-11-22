@@ -184,12 +184,6 @@ nav .sidebar ul li a:active{
     z-index: 1050; /* Ensure it stays on top */
 }
 
-.top-bar h1 {
-    font-size: large !important;
-    color: #333 !important;
-    margin: 0 !important;
-}
-
 .top-bar h1:hover {
     color: black !important;
     font-size: xx-large !important;
