@@ -81,144 +81,119 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
 
-            <div class="tour-package-content">
-    
-                        <div id="container">     
-                            <a href="http://localhost/GitHub/travelagency/index.php/AdminController/show_createTourPackage" class="btn btn-primary mb-3">Add Tour Package</a>
+        <div class="tour-package-content">
+            <div id="container">     
+                <a href="http://localhost/GitHub/travelagency/index.php/AdminController/show_createTourPackage" class="btn btn-primary mb-3">Add Tour Package</a>
 
-                            <div class="row" id="tourList">
-                            <!-- Tour cards will be appended here -->
-                            </div>
+                <div class="row" id="tourList">
+                    <!-- Tour cards will be appended here -->
+                </div>
 
-                            <!-- Paginate -->
-                            <div style="width: fit-content; margin: auto;" id='pagination2'></div>
-                        </div>
+                <!-- Paginate -->
+                <div style="width: fit-content; margin: auto;" id='pagination2'></div>
+            </div>
+        </div>
 
-                        <!-- View Modal -->
-                        <div class="modal" id="viewModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Tour Package Details</h4>
-                                <button type="button" class="close" data-dismiss="modal">×</button>
-                            </div>
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                <!-- Content will be loaded here from JavaScript -->
-                            </div>
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- Edit Modal -->
-                        <div class="modal" id="editModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                                <h4 class="modal-title">Edit Tour Package</h4>
-                                <button type="button" class="close" data-dismiss="modal">×</button>
-                            </div>
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                                <!-- Content will be loaded here from JavaScript -->
-                            </div>
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
+        <!-- View Modal -->
+        <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="viewModalLabel">Tour Package Details</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Content will be loaded here from JavaScript -->
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 <script type='text/javascript'>
    $(document).ready(function(){
-  $('#pagination2').on('click', 'a', function(e){
-    e.preventDefault();
-    var pageno = $(this).attr('data-ci-pagination-page');
-    loadPagination(pageno);
-  });
+      $('#pagination2').on('click', 'a', function(e){
+        e.preventDefault();
+        var pageno = $(this).attr('data-ci-pagination-page');
+        loadPagination(pageno);
+      });
 
-  loadPagination(0);
+      loadPagination(0);
 
-  function loadPagination(pagno){
-    $.ajax({
-      url: 'loadRecord1/' + pagno,
-      type: 'get',
-      dataType: 'json',
-      success: function(response){
-        $('#pagination2').html(response.pagination);
-        createGrid(response.result, response.row);
-      }
-    });
-  }
-
-  function createGrid(result, sno){
-    sno = Number(sno);
-    $('#tourList').empty();
-    for (index in result) {
-      var tourpackage_id = result[index].tourpackage_id;
-      var city = result[index].city;
-      var country = result[index].country;
-      var price = result[index].price;
-      var tourDescription = result[index].tourDescription;
-      var duration = result[index].duration;
-      var itineraries = result[index].itinerary;
-      sno += 1;
-      var card = `<div class="col-md-4">
-                    <div class="tour-card">
-                      <h5>City: ${city}</h5>
-                      <div class="tour-p-container">
-                        <p><strong>Country:</strong> ${country}</p>
-                        <p><strong>Price:</strong> ${price}</p>
-                        <p><strong>Description:</strong> ${tourDescription}</p>
-                        <p><strong>Duration:</strong> ${duration} days</p>
-                      </div>
-                      <a href='#' class="btn btn-warning view-modal-btn" data-tourpackage_id="${tourpackage_id}" data-city="${city}" data-country="${country}" data-price="${price}" data-description="${tourDescription}" data-duration="${duration}" data-itineraries='${JSON.stringify(itineraries)}'>View</a>
-                      <a href='http://localhost/GitHub/travelagency/index.php/AdminController/show_editTourPackage/${tourpackage_id}' class="btn btn-primary edit-modal-btn">Edit Package</a>
-                      <a href='http://localhost/GitHub/travelagency/index.php/AdminController/show_editItinerary/${tourpackage_id}' class="btn btn-primary edit-itinerary-btn">Edit Itinerary</a>
-                      <a href='http://localhost/GitHub/travelagency/index.php/AdminController/delete_TourPackage/${tourpackage_id}' class="btn btn-danger">Delete</a>
-                    </div>
-                  </div>`;
-      $('#tourList').append(card);
-    }
-
-    // Attach click event to view modal buttons
-    $('.view-modal-btn').click(function() {
-      var tourpackage_id = $(this).data('tourpackage_id');
-      var city = $(this).data('city');
-      var country = $(this).data('country');
-      var price = $(this).data('price');
-      var description = $(this).data('description');
-      var duration = $(this).data('duration');
-      var itineraries = $(this).data('itineraries');
-      var modalContent = `<p><strong>ID:</strong> ${tourpackage_id}</p>
-                          <p><strong>City:</strong> ${city}</p>
-                          <p><strong>Country:</strong> ${country}</p>
-                          <p><strong>Price:</strong> ${price}</p>
-                          <p><strong>Description:</strong> ${description}</p>
-                          <p><strong>Duration:</strong> ${duration} days</p>`;
-      if (itineraries && itineraries.length > 0) {
-        modalContent += `<hr><h5>Itinerary Details:</h5>`;
-        itineraries.forEach(function(itinerary) {
-          modalContent += `<p><strong>Day ${itinerary.day}:</strong> ${itinerary.activity}</p>
-                           <p><strong>Start Time:</strong> ${itinerary.startTime}</p>
-                           <p><strong>End Time:</strong> ${itinerary.endTime}</p>
-                           <p><strong>Location:</strong> ${itinerary.location}</p><hr>`;
+      function loadPagination(pagno){
+        $.ajax({
+          url: 'loadRecord1/' + pagno,
+          type: 'get',
+          dataType: 'json',
+          success: function(response){
+            $('#pagination2').html(response.pagination);
+            createGrid(response.result, response.row);
+          }
         });
-      } else {
-        modalContent += `<p>No itinerary details available.</p>`;
       }
-      $('#viewModal .modal-body').html(modalContent);
-      $('#viewModal').modal('show');
-    });
-  }
-});
+
+      function createGrid(result, sno){
+        sno = Number(sno);
+        $('#tourList').empty();
+        for (index in result) {
+          var tourpackage_id = result[index].tourpackage_id;
+          var city = result[index].city;
+          var country = result[index].country;
+          var price = result[index].price;
+          var tourDescription = result[index].tourDescription;
+          var duration = result[index].duration;
+          var itineraries = result[index].itinerary;
+          sno += 1;
+          var card = `<div class="col-md-4">
+                        <div class="tour-card">
+                          <h5>City: ${city}</h5>
+                          <div class="tour-p-container">
+                            <p><strong>Country:</strong> ${country}</p>
+                            <p><strong>Price:</strong> ${price}</p>
+                            <p><strong>Description:</strong> ${tourDescription}</p>
+                            <p><strong>Duration:</strong> ${duration} days</p>
+                          </div>
+                          <a href='#' class="btn btn-warning view-modal-btn" data-tourpackage_id="${tourpackage_id}" data-city="${city}" data-country="${country}" data-price="${price}" data-description="${tourDescription}" data-duration="${duration}" data-itineraries='${JSON.stringify(itineraries)}'>View</a>
+                          <a href='http://localhost/GitHub/travelagency/index.php/AdminController/show_editTourPackage/${tourpackage_id}' class="btn btn-primary edit-modal-btn">Edit Package</a>
+                          <a href='http://localhost/GitHub/travelagency/index.php/AdminController/show_editItinerary/${tourpackage_id}' class="btn btn-primary edit-itinerary-btn">Edit Itinerary</a>
+                          <a href='http://localhost/GitHub/travelagency/index.php/AdminController/delete_TourPackage/${tourpackage_id}' class="btn btn-danger">Delete</a>
+                        </div>
+                      </div>`;
+          $('#tourList').append(card);
+        }
+
+        // Attach click event to view modal buttons
+        $('.view-modal-btn').click(function() {
+          var tourpackage_id = $(this).data('tourpackage_id');
+          var city = $(this).data('city');
+          var country = $(this).data('country');
+          var price = $(this).data('price');
+          var description = $(this).data('description');
+          var duration = $(this).data('duration');
+          var itineraries = $(this).data('itineraries');
+          
+          // Populate modal content
+          var modalContent = `<p><strong>City:</strong> ${city}</p>
+                              <p><strong>Country:</strong> ${country}</p>
+                              <p><strong>Price:</strong> ${price}</p>
+                              <p><strong>Description:</strong> ${description}</p>
+                              <p><strong>Duration:</strong> ${duration} days</p>
+                              <p><strong>Itineraries:</strong> ${itineraries}</p>`;
+          $('#viewModal .modal-body').html(modalContent);
+          
+          // Show modal
+          $('#viewModal').modal('show');
+        });
+      }
+   });
 </script>
 
 </body>

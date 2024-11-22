@@ -780,6 +780,29 @@ nav .sidebar ul li a:active{
 .btn-danger:hover {
     background-color: #c82333;
 }
+
+/* Additional CSS for Modal Positioning */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+    outline: 0;
+}
+
+.modal-open .modal {
+    display: block;
+    overflow: hidden;
+}
+
+.tour-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
 /* Pagination 
 #pagination2 {
     display: flex;
