@@ -87,6 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <table class="table table-bordered" id="assetList">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>Username</th>
                                 <th>Password</th>
                                 <th>First Name</th>
@@ -142,6 +143,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         sno = Number(sno);
                         $('#assetList tbody').empty();
                         for(index in result){
+                            var id = result[index].id;
                             var username = result[index].username;
                             var pass = result[index].pass;
                             var firstName = result[index].firstName;
@@ -159,6 +161,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             sno+=1;
                             
                             var tr = "<tr>";
+                            tr += "<td>"+ id +"</td>";
                             tr += "<td>"+ username +"</td>";
                             tr += "<td>"+ pass +"</td>";
                             tr += "<td>"+ firstName +"</td>";
