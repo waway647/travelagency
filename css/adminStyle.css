@@ -260,22 +260,8 @@ nav .sidebar ul li a:active{
     position: fixed !important;
 }
 
-.packageSearch input[type="text"] {
-    position: absolute  !important;
-    width: 51%  !important;
-    padding: 10px  !important;
-    background-color: #fff;
-    border: none  !important;
-    border-radius: 5px  !important;
-    font-size: 16px  !important;
-    top: 16%  !important; 
-    left: 43%  !important;
-    right: 40%  !important;
-    position: fixed  !important;
-}
-
 .notification-bell {
-    left: 89%  !important;
+    left: 92%  !important;
     border: none  !important;
     background-color: #fff  !important;
     border-radius: 5px  !important;
