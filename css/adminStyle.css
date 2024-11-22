@@ -539,6 +539,7 @@ nav .sidebar ul li a:active{
     padding-left: 0;
     list-style: none;
     border-radius: .25rem;
+    margin-bottom: 10px;
 }
 
 .page-link {
@@ -696,7 +697,6 @@ nav .sidebar ul li a:active{
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
-    width: 50px;
 }
 
 .btn-primary:hover {
@@ -768,6 +768,7 @@ nav .sidebar ul li a:active{
 
 .btn-primary {
     background-color: #007bff;
+    width: 60px;
 }
 
 .btn-primary:hover {
@@ -791,6 +792,7 @@ nav .sidebar ul li a:active{
     transform: translate(-50%, -50%);
     z-index: 1050;
     outline: 0;
+    background-color: rgba(0, 0, 0, 0.504);
 }
 
 .modal-open .modal {
