@@ -174,8 +174,8 @@ nav .sidebar ul li a:active{
     margin: 0 auto !important;
     padding: 0 10px !important;
     border: 1px solid rgb(228, 227, 225) !important;
-    width: 80% !important;
-    height: 8% !important;
+    width: 100% !important;
+    height: 10% !important;
     border-radius: 5px !important;
     background-color: rgba(225, 223, 219, 0.352) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.419) !important;
@@ -654,6 +654,20 @@ nav .sidebar ul li a:active{
 
 .tour-package-content::-webkit-scrollbar {
     height: 8px;
+}
+
+.tour-package-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.343); 
+    border-radius: 10px; 
+}
+
+.tour-package-content::-webkit-scrollbar-track {
+    background-color: rgba(228, 227, 225, 0.5); 
+    border-radius: 8px; 
+}
+
+.tour-package-content::-webkit-scrollbar {
+    width: 8px;
 }
 
 .tour-package-content::-webkit-scrollbar-thumb {
