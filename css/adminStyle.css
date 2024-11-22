@@ -803,6 +803,52 @@ nav .sidebar ul li a:active{
     margin-bottom: 20px;
     background-color: #f9f9f9;
 }
+
+/* General Modal Styling */
+.modal-content {
+    width: auto; /* Adjust width dynamically */
+    margin: 20px auto; /* Add some margin for responsiveness */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* White background for contrast */
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* Darken backdrop */
+}
+
+/* Modal Body Scroll */
+.modal-body {
+    max-height: 70vh; /* Adjust the height for scrolling */
+    overflow-y: auto; /* Enable vertical scroll */
+    padding: 15px;
+}
+
+/* Close Button Styling */
+.modal-header .close {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Modal Footer */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Button Hover Effects */
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
 /* Pagination 
 #pagination2 {
     display: flex;

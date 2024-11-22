@@ -91,37 +91,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div style="width: fit-content; margin: auto;" id='pagination2'></div>
         </div>
         <!-- View Modal -->
-        <div class="modal" id="viewModal">
-            <div class="modal-dialog">
+        <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">Tour Package Details</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h5 class="modal-title" id="viewModalLabel">Tour Package Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <!-- Content will be loaded here from JavaScript -->
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Edit Modal -->
-        <div class="modal" id="editModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Edit Tour Package</h4>
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <!-- Content will be loaded here from JavaScript -->
+                        <!-- Content dynamically loaded from JavaScript -->
                     </div>
                     <!-- Modal footer -->
                     <div class="modal-footer">
