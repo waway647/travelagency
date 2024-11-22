@@ -175,11 +175,11 @@ nav .sidebar ul li a:active{
     padding: 0 10px !important;
     border: 1px solid rgb(228, 227, 225) !important;
     width: 100% !important;
-    height: 10% !important;
+    height: 8% !important;
     border-radius: 5px !important;
     background-color: rgba(225, 223, 219, 0.352) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.419) !important;
-    left: 17.5% !important;
+    left: 17% !important;
     z-index: 1000 !important;
 }
 
@@ -248,7 +248,7 @@ nav .sidebar ul li a:active{
     justify-content: space-between; 
     position: absolute;
     top: 11%;
-    left: 17.5%;
+    left: 17%;
     width: 80%; 
 }
 
@@ -293,7 +293,7 @@ nav .sidebar ul li a:active{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.419);
     background-color: #fff;
     border-radius: 10px;
-    left: 17.5%;
+    left: 17%;
     top: 37%;
     height: 60vh;
     position: fixed;
@@ -422,7 +422,7 @@ nav .sidebar ul li a:active{
     margin: auto;
     padding: 5px;
     width: 80%;
-    left: 17.5%;
+    left: 17%;
     top: 13%;
     padding-bottom: 0;
     max-height: 82vh; 
@@ -641,7 +641,7 @@ nav .sidebar ul li a:active{
     margin: auto;
     padding: 5px;
     width: 80%;
-    left: 17.5%;
+    left: 17%;
     top: 13%;
     padding-bottom: 0;
     max-height: 82vh; 
