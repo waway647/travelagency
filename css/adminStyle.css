@@ -249,7 +249,8 @@ nav .sidebar ul li a:active{
     position: absolute;
     top: 11%;
     left: 16.5%;
-    width: 100%; 
+    width: 85%; 
+    position: fixed;
 }
 
 .card{
@@ -421,7 +422,7 @@ nav .sidebar ul li a:active{
     height: 83vh;
     margin: auto;
     padding: 5px;
-    width: 90%;
+    width: 85%;
     left: 16.5%;
     top: 12%;
     padding-bottom: 0;
@@ -640,7 +641,7 @@ nav .sidebar ul li a:active{
     height: 82vh;
     margin: auto;
     padding: 5px;
-    width: 90%;
+    width: 85%;
     left: 17%;
     top: 12%;
     padding-bottom: 0;
