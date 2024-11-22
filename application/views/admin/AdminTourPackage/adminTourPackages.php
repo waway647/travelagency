@@ -72,7 +72,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 
                     <div class="packageSearch">
                         <label for "search"></label>
-                        <input type="text" 
+                        <input type="text" style=".packageSearch input[type='text']:active {
+                            color: #000000 !important;
+                            cursor: pointer !important;
+                        }"
                         onKeyUp="ajaxSearch(this.value)"
                         class="form-control" name="search" id="search" placeholder="Search Package">
                     </div>

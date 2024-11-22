@@ -204,7 +204,7 @@ nav .sidebar ul li a:active{
     border: none  !important;
     border-radius: 5px  !important;
     font-size: 16px  !important;
-    top: 5.5%  !important;
+    /* top: %  !important; */
     left: 43%  !important;
     right: 40%  !important;
     position: fixed  !important;
@@ -224,7 +224,7 @@ nav .sidebar ul li a:active{
 
 .notification-bell {
     position: absolute  !important;
-    top: 5.5%  !important;
+    /* top: 5.5%  !important; */
     left: 94.5%  !important;
     border: none  !important;
     background-color: #fff  !important;
