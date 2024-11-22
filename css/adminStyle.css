@@ -206,7 +206,6 @@ nav .sidebar ul li a:active{
     font-size: 16px  !important;
     left: 43%  !important;
     right: 40%  !important;
-    position: fixed  !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.419);
 }
 
