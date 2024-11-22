@@ -247,12 +247,6 @@ nav .sidebar ul li a:active{
     opacity: 0.6 !important;
 }
 
-/* Ensures Bootstrap styles do not override these customizations */
-* {
-    all: unset;
-    box-sizing: border-box;
-}
-
 /* D A S H B O A R D  C O N T E N T */
 
 .dashboard-cards {
