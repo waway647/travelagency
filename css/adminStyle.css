@@ -261,14 +261,12 @@ nav .sidebar ul li a:active{
 }
 
 .notification-bell {
-    left: 92%  !important;
     border: none  !important;
     background-color: #fff  !important;
     border-radius: 5px  !important;
     width: 40px  !important;
     height: 40px  !important;
-    padding-left: 3px  !important;
-    position: fixed  !important;
+    
 }
 
 .notification-bell img {
