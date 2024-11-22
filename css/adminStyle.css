@@ -197,7 +197,7 @@ nav .sidebar ul li a:active{
 }
 
 .packageSearch input[type="text"] {
-    position: absolute  !important;
+    /* position: absolute  !important;
     width: 48%  !important;
     padding: 10px  !important;
     background-color: #fff;
@@ -208,7 +208,15 @@ nav .sidebar ul li a:active{
     left: 44%  !important;
     right: 40%  !important;
     position: fixed  !important;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.419);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.419); */
+    position: absolute  !important;
+    left: 48%  !important;
+    border: none  !important;
+    background-color: #fff  !important;
+    border-radius: 5px  !important;
+    width: 48%  !important;
+    padding-left: 3px  !important;
+    position: fixed  !important;
 }
 
 .packageSearch input[type="text"]:hover {
