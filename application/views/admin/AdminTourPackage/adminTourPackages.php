@@ -67,22 +67,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </nav>
     </div>
     <div class="main-content" id="main-content-adminTourPackages">
-            <div class="top-bar">
-                <h1>Tour Packages</h1>
-                
-                    <div class="packageSearch">
-                        <label for "search"></label>
-                        <input type="text" style=".packageSearch input[type='text']:active {
-                            color: #000000 !important;
-                            cursor: pointer !important;
-                        }"
-                        onKeyUp="ajaxSearch(this.value)"
-                        class="form-control" name="search" id="search" placeholder="Search Package">
-                    </div>
-                    <div class="notification-bell">
-                        <a href="notif.html"><img src="http://localhost/GitHub/travelagency/images/icons/notification.png" alt=""></a>
-                    </div>
+        <div class="top-bar">
+            <h1>Dashboard</h1>
+
+            <div class="search-bar">
+                <div class="packageSearch">
+                    <label for="search"></label>
+                    <input type="text" 
+                    onKeyUp="ajaxSearch(this.value)"
+                    class="form-control" name="search" id="search" placeholder="Search Package">
+                </div>
+                <div class="notification-bell">
+                    <a href="notif.html"><img src="http://localhost/GitHub/travelagency/images/icons/notification.png" alt=""></a>
+                </div>
             </div>
+        </div>
 
             <div class="tour-package-content">
     

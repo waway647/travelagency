@@ -65,10 +65,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="main-content">
 
         <div class="top-bar">
-            <h1>Archives</h1>
-            
+            <h1>Dashboard</h1>
+
+            <div class="search-bar">
                 <div class="packageSearch">
-                    <label for "search"></label>
+                    <label for="search"></label>
                     <input type="text" 
                     onKeyUp="ajaxSearch(this.value)"
                     class="form-control" name="search" id="search" placeholder="Search Package">
@@ -76,6 +77,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="notification-bell">
                     <a href="notif.html"><img src="http://localhost/GitHub/travelagency/images/icons/notification.png" alt=""></a>
                 </div>
+            </div>
         </div>
 
         <div class="archives-table">
