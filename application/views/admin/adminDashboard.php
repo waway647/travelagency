@@ -80,7 +80,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="main-content" id="main-content-adminDashboard">
         <div class="top-bar">
             <h1>Dashboard</h1>
-            
+
+            <div class="search-bar">
                 <div class="packageSearch">
                     <label for="search"></label>
                     <input type="text" 
@@ -90,6 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="notification-bell">
                     <a href="notif.html"><img src="http://localhost/GitHub/travelagency/images/icons/notification.png" alt=""></a>
                 </div>
+            </div>
         </div>
         <div class="dashboard-content">
             <div class="dashboard-cards">
