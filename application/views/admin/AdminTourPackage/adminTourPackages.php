@@ -98,7 +98,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="modal-header">
                         <h5 class="modal-title" id="viewModalLabel">Tour Package Details</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true"></span>
                         </button>
                     </div>
                     <!-- Modal body -->
@@ -154,8 +154,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <p><strong>Duration:</strong> ${duration} days</p>
                                 </div>
                                 <a href='#' class="btn btn-warning view-modal-btn" data-tourpackage_id="${tourpackage_id}" data-city="${city}" data-country="${country}" data-price="${price}" data-description="${tourDescription}" data-duration="${duration}" data-itineraries='${JSON.stringify(itineraries)}'>View</a>
-                                <a href='http://localhost/GitHub/travelagency/index.php/AdminController/show_editTourPackage/${tourpackage_id}' class="btn btn-primary edit-modal-btn">Edit<br>Package</a>
-                                <a href='http://localhost/GitHub/travelagency/index.php/AdminController/show_editItinerary/${tourpackage_id}' class="btn btn-primary edit-itinerary-btn">Edit<br>Itinerary</a>
+                                <a href='http://localhost/GitHub/travelagency/index.php/AdminController/show_editTourPackage/${tourpackage_id}' class="btn btn-primary edit-modal-btn">Edit Package</a>
+                                <a href='http://localhost/GitHub/travelagency/index.php/AdminController/show_editItinerary/${tourpackage_id}' class="btn btn-primary edit-itinerary-btn">Edit Itinerary</a>
                                 <a href='http://localhost/GitHub/travelagency/index.php/AdminController/delete_TourPackage/${tourpackage_id}' class="btn btn-danger">Delete</a>
                             </div>
                         </div>`;

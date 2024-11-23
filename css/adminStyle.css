@@ -226,6 +226,7 @@ nav .sidebar ul li a:active{
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    padding: 5px !important;
 }
 
 .notification-bell img {
@@ -772,17 +773,17 @@ nav .sidebar ul li a:active{
 
 /* Buttons */
 .btn {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 800;
     color: white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     text-decoration: none;
-    display: inline-block;
     text-align: center;
-    width: 75px;
+    display: block;
+    margin: 2px;
 }
 
 .mb-3{
@@ -819,11 +820,14 @@ nav .sidebar ul li a:active{
     display: none;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 57%;
     transform: translate(-50%, -50%);
     z-index: 9999999999;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.463);
-    outline: 0;
+    width: 70%;
+    height: 91.1%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    background-color: #ffffff;
 }
 
 .modal-open .modal {
@@ -837,16 +841,15 @@ nav .sidebar ul li a:active{
     margin-bottom: 20px;
     background-color: #f9f9f9;
     overflow: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.463);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.463);
 }
 
 /* General Modal Styling */
 .modal-content {
     width: auto; 
-    margin: 20px auto;
+    border-radius: 5px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px; 
-    background-color: #fff; 
 }
 
 .modal-backdrop {
