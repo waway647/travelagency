@@ -96,10 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h5 class="modal-title" id="viewModalLabel">Tour Package Details</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"></span>
-                        </button>
+                        <h5 class="modal-title" id="viewModalLabel" style="font-size: 32px; font-weight:800">Tour Package Details</h5>
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
