@@ -26,7 +26,7 @@ class Account extends CI_Controller {
 	{
 		if($this->session->userdata('username'))
 		{
-			$this->load->view('admin/adminDashboard');
+			redirect('AdminController/showAdminDashboard');
 		}
 		else
 		{

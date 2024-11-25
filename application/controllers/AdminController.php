@@ -88,7 +88,15 @@ class AdminController extends CI_Controller {
     // for D A S H B O A R D
 	public function showAdminDashboard()
 	{
-		$this->load->view('admin/adminDashboard');
+		$username = $this->session->userdata('username');
+    	$fname = $this->session->userdata('fname');
+    	$lname = $this->session->userdata('lname');
+
+    	$data['username'] = $username;
+    	$data['fname'] = $fname;
+    	$data['lname'] = $lname;
+
+		$this->load->view('admin/adminDashboard', $data);
 	}
 
 
@@ -101,6 +109,14 @@ class AdminController extends CI_Controller {
     // for T O U R  P A C K A G E S
 	public function showTourPackages()
 	{
+		$username = $this->session->userdata('username');
+    	$fname = $this->session->userdata('fname');
+    	$lname = $this->session->userdata('lname');
+
+    	$data['username'] = $username;
+    	$data['fname'] = $fname;
+    	$data['lname'] = $lname;
+		
 		$this->load->view('admin/AdminTourPackage/adminTourPackages');
 	}
 
