@@ -12,7 +12,7 @@ class Account extends CI_Controller {
 		$this->load->model('Account_model');
 		$this->load->helper('url');
 		$this->load->library('encryption');
-		$this->load->helper('accesscontrol_helper'); // Load the helper
+		$this->load->helper('accesscontrol_helper'); 
 	}
 
 	//homepage
@@ -26,11 +26,11 @@ class Account extends CI_Controller {
 	{
 		if($this->session->userdata('username'))
 		{
-			$this->load->view('admin/adminDashboard');
+			redirect('AdminController/showAdminDashboard');
 		}
 		else
 		{
-			$this->load->view('webpages/login_register/signIn');
+			redirect('Account/redirect_signIn');
 		}
 	}
 
