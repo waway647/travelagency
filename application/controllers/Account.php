@@ -26,11 +26,11 @@ class Account extends CI_Controller {
 	{
 		if($this->session->userdata('username'))
 		{
-			redirect('AdminController/showAdminDashboard');
+			$this->load->view('admin/adminDashboard');
 		}
 		else
 		{
-			redirect('Account/redirect_signIn');
+			$this->load->view('webpages/login_register/signIn');
 		}
 	}
 
