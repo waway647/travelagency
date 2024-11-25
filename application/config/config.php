@@ -383,14 +383,21 @@ $config['encryption_key'] = '';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'files';
+/* $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_samesite'] = 'Lax';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
-$config['sess_regenerate_destroy'] = FALSE;
+$config['sess_regenerate_destroy'] = FALSE; */
+
+$config['sess_driver'] = 'files';  // Or use 'database' if you are using database-based sessions
+$config['sess_save_path'] = sys_get_temp_dir();  // If using 'files' driver
+$config['sess_expiration'] = 7200;  // Session expiration time (in seconds)
+$config['sess_cookie_name'] = 'ci_session';  // Cookie name for session
+$config['sess_cookie_lifetime'] = 7200;  // Cookie lifetime (in seconds)
+$config['sess_match_ip'] = FALSE;  // Set to TRUE if you want to match IP
 
 /*
 |--------------------------------------------------------------------------
