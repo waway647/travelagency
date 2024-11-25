@@ -277,7 +277,7 @@ class Account extends CI_Controller {
 	//for B O O K I N G S
 	public function showAdminBookings()
 	{
-        $data['bookings'] = $this->Account_model->bookings_GetAll();
+        $data['bookings'] = $this->Admin_model->bookings_GetAll();
 		$this->load->view('admin/AdminBookings/adminBookings', $data);
 	}
 
@@ -377,7 +377,7 @@ class Account extends CI_Controller {
 							"duration" => $this->input->post("duration")
 						];
 
-						$tourPackageID = $this->Account_model->saveTourPackage($tourpackagedata);
+						$tourPackageID = $this->Admin_model->saveTourPackage($tourpackagedata);
 						if ($tourPackageID) {
 							// Collect itinerary data
 							$itineraries = $this->input->post("itinerary");
@@ -390,7 +390,7 @@ class Account extends CI_Controller {
 									"endTime" => $itinerary["endTime"],
 									"location" => $itinerary["location"]
 								];
-								$this->Account_model->saveItinerary($itinerarydata);
+								$this->Admin_model->saveItinerary($itinerarydata);
 							}
 					
 							// Redirect to the index page after successful save
@@ -404,7 +404,7 @@ class Account extends CI_Controller {
 
 			public function show_editTourPackage($tourpackage_id)
 			{
-				$data['tourpackages'] = $this->Account_model->get_edit($tourpackage_id);
+				$data['tourpackages'] = $this->Admin_model->get_edit($tourpackage_id);
 				$this->load->view("admin/AdminTourPackage/form_editTourPackage", $data);
 			}
 
@@ -416,7 +416,7 @@ class Account extends CI_Controller {
 						$mydata["tourDescription"] = $this->input->post("tourDescription");
 						$mydata["duration"] = $this->input->post("duration");
 
-						$result = $this->Account_model->updateTourPackage($tourpackage_id,$mydata);
+						$result = $this->Admin_model->updateTourPackage($tourpackage_id,$mydata);
 						if($result == true)
 						{
 							$this->session->set_userdata('username', $this->session->userdata('username'));
@@ -427,8 +427,8 @@ class Account extends CI_Controller {
 
 			public function show_editItinerary($tourpackage_id)
 			{
-				$data['tourpackage'] = $this->Account_model->get_edit($tourpackage_id);
-				$data['itineraries'] = $this->Account_model->getItinerariesByTourPackageId($tourpackage_id);
+				$data['tourpackage'] = $this->Admin_model->get_edit($tourpackage_id);
+				$data['itineraries'] = $this->Admin_model->getItinerariesByTourPackageId($tourpackage_id);
 				$this->load->view("admin/AdminTourPackage/form_edit_itinerary", $data);
 			}
 
@@ -436,7 +436,7 @@ class Account extends CI_Controller {
 						$itineraries = $this->input->post('itinerary');
 					
 						foreach($itineraries as $day => $itinerary) {
-							$this->Account_model->updateItinerary($itinerary['id'], $itinerary);
+							$this->Admin_model->updateItinerary($itinerary['id'], $itinerary);
 						}
 					
 						$this->session->set_userdata('username', $this->session->userdata('username'));
@@ -446,7 +446,7 @@ class Account extends CI_Controller {
 			public function delete_TourPackage($deleteid)
 			{
 
-				$result = $this->Account_model->deleteTourPackage($deleteid);
+				$result = $this->Admin_model->deleteTourPackage($deleteid);
 				if($result == true)
 				{
 					$this->session->set_userdata('username', $this->session->userdata('username'));
@@ -536,19 +536,19 @@ class Account extends CI_Controller {
 			// For U S E R  A C C O U N T S
 			public function showUserAccounts()
 			{
-				$data['editUser'] = $this->Account_model->get_all();
+				$data['editUser'] = $this->Admin_model->get_all();
 				$this->load->view('admin/AdminUserAccounts/adminUserAccounts', $data);
 			}
 
 			public function editUserAccount($id)
 			{
-				$data['editUser'] = $this->Account_model->editUser($id);
+				$data['editUser'] = $this->Admin_model->editUser($id);
 				$this->load->view('admin/AdminUserAccounts/editUserAccount', $data);
 			}
 
 			public function deleteUserAccount($id)
 			{
-				$result = $this->Account_model->deleteUser($id);
+				$result = $this->Admin_model->deleteUser($id);
 				if ($result) {
 					echo "Asset successfully deleted!";
 					redirect('AdminController/showUserAccounts');
@@ -571,7 +571,7 @@ class Account extends CI_Controller {
 				$myUser['nationality'] = $this->input->post('nationality');
 				$myUser['updated_at'] = $this->input->post('updated_at');
 
-				$result = $this->Account_model->updateUser($id, $myUser);
+				$result = $this->Admin_model->updateUser($id, $myUser);
 				if ($result) {
 					echo "Asset successfully edited!";
 					redirect('AdminController/showUserAccounts');
