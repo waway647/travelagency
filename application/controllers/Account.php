@@ -21,7 +21,7 @@ class Account extends CI_Controller {
 		$this->load->view('homepage');
 	}
 
-
+/* 
 	public function redirect_adminPage()
 	{
 		if($this->session->userdata('username'))
@@ -32,7 +32,7 @@ class Account extends CI_Controller {
 		{
 			$this->load->view('webpages/login_register/signIn');
 		}
-	}
+	} */
 
 	public function redirect_signIn()
 	{
@@ -74,7 +74,7 @@ class Account extends CI_Controller {
 				if ($result == true) {
 					/* var_dump($this->session->all_userdata());  */
 					$accountresult = $this->Account_model->getAdminAccount($username_frompost);
-					if($accountresult)
+					if($accountresult && $this->session->userdata('logged_username'))
 					{
 						$this->session->set_userdata(array(
 							'username' => $username_frompost,
@@ -82,7 +82,7 @@ class Account extends CI_Controller {
 							'minitial' => $accountresult->minitial,
 							'lname' => $accountresult->lname,
 						));
-						$this->redirect_adminPage();
+						redirect('AdminController/showAdminDashboard');
 					}	
 					else 
 					{
