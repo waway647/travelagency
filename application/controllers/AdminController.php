@@ -13,6 +13,7 @@ class AdminController extends CI_Controller {
         $this->load->database();
         $this->load->model("Admin_model");
         $this->load->helper('url');
+		$this->load->helper('accesscontrol_helper'); 
 	}
 
 	// for A D M I N  P A G E
@@ -103,10 +104,10 @@ class AdminController extends CI_Controller {
 		$this->load->view('admin/AdminTourPackage/adminTourPackages');
 	}
 
-			public function show_createTourPackage()
-			{
-				$this->load->view('admin/AdminTourPackage/form_newTourPackage');
-			}
+	public function show_createTourPackage()
+	{
+		$this->load->view('admin/AdminTourPackage/form_newTourPackage');
+	}				
 
 					public function create_tourPackage()
 					{
@@ -135,6 +136,7 @@ class AdminController extends CI_Controller {
 							}
 					
 							// Redirect to the index page after successful save
+							$this->session->set_userdata('username', $this->session->userdata('username'));
 							redirect('AdminController/showTourPackages');
 						} else {
 							// Handle the error
@@ -159,6 +161,7 @@ class AdminController extends CI_Controller {
 						$result = $this->Admin_model->updateTourPackage($tourpackage_id,$mydata);
 						if($result == true)
 						{
+							$this->session->set_userdata('username', $this->session->userdata('username'));
 							redirect('AdminController/showTourPackages');
 							//$this->index();
 						}
@@ -178,6 +181,7 @@ class AdminController extends CI_Controller {
 							$this->Admin_model->updateItinerary($itinerary['id'], $itinerary);
 						}
 					
+						$this->session->set_userdata('username', $this->session->userdata('username'));
 						redirect('AdminController/showTourPackages');
 					}
 
@@ -187,8 +191,8 @@ class AdminController extends CI_Controller {
 				$result = $this->Admin_model->deleteTourPackage($deleteid);
 				if($result == true)
 				{
+					$this->session->set_userdata('username', $this->session->userdata('username'));
 					redirect('AdminController/showTourPackages');
-					//$this->index();
 				}
 			}
 
