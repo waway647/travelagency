@@ -135,74 +135,76 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
-            <div class="booking-rates">
-                <h2>Booking Rates</h2>
-                <div class="booking-rate-cards">
-                    <div class="booking-rate-card">
-                        <h3>Rates as of October</h3>
-                        <h4>100%</h4>
-                        <div class="date">
-                            <select>
-                                <option disabled selected>Choose date</option>
-                                <option>Today</option>
-                                <option>This week</option>
-                                <option>This month</option>
-                                <option>Choose month & year</option>
-                            </select>
+            <div class="rates-users">   
+                <div class="booking-rates">
+                    <h2>Booking Rates</h2>
+                    <div class="booking-rate-cards">
+                        <div class="booking-rate-card">
+                            <h3>Rates as of October</h3>
+                            <h4>100%</h4>
+                            <div class="date">
+                                <select>
+                                    <option disabled selected>Choose date</option>
+                                    <option>Today</option>
+                                    <option>This week</option>
+                                    <option>This month</option>
+                                    <option>Choose month & year</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="feedback-ratings">
-                <h2>Feedback Ratings</h2>
-                <div class="feedback-rating-cards">
-                    <div class="feedback-rating-card">
-                        <h3>Feedback as of October</h3>
-                        <h4>100%</h4>
-                        <div class="date">
-                            <select>
-                                <option disabled selected>Choose Date</option>
-                                <option>Today</option>
-                                <option>This week</option>
-                                <option>This month</option>
-                                <option>Choose month & year</option>
-                            </select>
+                <div class="feedback-ratings">
+                    <h2>Feedback Ratings</h2>
+                    <div class="feedback-rating-cards">
+                        <div class="feedback-rating-card">
+                            <h3>Feedback as of October</h3>
+                            <h4>100%</h4>
+                            <div class="date">
+                                <select>
+                                    <option disabled selected>Choose Date</option>
+                                    <option>Today</option>
+                                    <option>This week</option>
+                                    <option>This month</option>
+                                    <option>Choose month & year</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="top-users">
-                <h2>Top Users</h2>
-                <div class="top-user-cards">
-                    <div class="top-user-card">
-                        <h3>Top User 1</h3>
-                        <h4>5 Bookings</h4>
-                        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
-                    </div>
-                    <div class="top-user-card">
-                        <h3>Top User 3</h3>
-                        <h4>3 Bookings</h4>
-                        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
-                    </div>
-                    <div class="top-user-card">
-                        <h3>Top User 3</h3>
-                        <h4>6 Bookings</h4>
-                        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
-                    </div>
-                    <div class="top-user-card">
-                        <h3>Top User 4</h3>
-                        <h4>6 Bookings</h4>
-                        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
-                    </div>
-                    <div class="top-user-card">
-                        <h3>Top User 5</h3>
-                        <h4>6 Bookings</h4>
-                        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
-                    </div>
-                    <div class="top-user-card">
-                        <h3>Top User 6</h3>
-                        <h4>6 Bookings</h4>
-                        <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                <div class="top-users">
+                    <h2>Top Users</h2>
+                    <div class="top-user-cards">
+                        <div class="top-user-card">
+                            <h3>Top User 1</h3>
+                            <h4>5 Bookings</h4>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                        </div>
+                        <div class="top-user-card">
+                            <h3>Top User 3</h3>
+                            <h4>3 Bookings</h4>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                        </div>
+                        <div class="top-user-card">
+                            <h3>Top User 3</h3>
+                            <h4>6 Bookings</h4>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                        </div>
+                        <div class="top-user-card">
+                            <h3>Top User 4</h3>
+                            <h4>6 Bookings</h4>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                        </div>
+                        <div class="top-user-card">
+                            <h3>Top User 5</h3>
+                            <h4>6 Bookings</h4>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                        </div>
+                        <div class="top-user-card">
+                            <h3>Top User 6</h3>
+                            <h4>6 Bookings</h4>
+                            <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
