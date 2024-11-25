@@ -11,7 +11,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         function ajaxSearch(str) {
             if (str == "") {
                 location.reload();
-                //alert("here");
                 document.getElementById("newtable").innerHTML = '';
                 return;
             } else {
