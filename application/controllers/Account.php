@@ -21,7 +21,7 @@ class Account extends CI_Controller {
 		$this->load->view('homepage');
 	}
 
-/* 
+
 	public function redirect_adminPage()
 	{
 		if($this->session->userdata('username'))
@@ -32,7 +32,7 @@ class Account extends CI_Controller {
 		{
 			$this->load->view('webpages/login_register/signIn');
 		}
-	} */
+	}
 
 	public function redirect_signIn()
 	{
