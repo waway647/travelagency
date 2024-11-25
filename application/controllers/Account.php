@@ -74,7 +74,7 @@ class Account extends CI_Controller {
 				if ($result == true) {
 					/* var_dump($this->session->all_userdata());  */
 					$accountresult = $this->Account_model->getAdminAccount($username_frompost);
-					if($accountresult && $this->session->userdata('logged_username'))
+					if($accountresult)
 					{
 						$this->session->set_userdata(array(
 							'username' => $username_frompost,
