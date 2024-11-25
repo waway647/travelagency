@@ -26,7 +26,7 @@ class Account extends CI_Controller {
 	{
 		if($this->session->userdata('username'))
 		{
-			redirect('AdminController/showAdminDashboard');
+			$this->load->view('admin/adminDashboard');
 		}
 		else
 		{
@@ -82,7 +82,7 @@ class Account extends CI_Controller {
 							'minitial' => $accountresult->minitial,
 							'lname' => $accountresult->lname,
 						));
-						redirect('AdminController/showAdminDashboard');
+						$this->redirect_adminPage();
 					}	
 					else 
 					{
