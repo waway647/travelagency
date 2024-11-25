@@ -137,7 +137,7 @@ class AdminController extends CI_Controller {
 					
 							// Redirect to the index page after successful save
 							$this->session->set_userdata('username', $this->session->userdata('username'));
-							redirect('AdminController/showTourPackages');
+							redirect('Account/redirect_adminPage');
 						} else {
 							// Handle the error
 							echo "Failed to save the tour package.";
@@ -162,7 +162,7 @@ class AdminController extends CI_Controller {
 						if($result == true)
 						{
 							$this->session->set_userdata('username', $this->session->userdata('username'));
-							redirect('AdminController/showTourPackages');
+							redirect('Account/redirect_adminPage');
 							//$this->index();
 						}
 					}
@@ -182,7 +182,7 @@ class AdminController extends CI_Controller {
 						}
 					
 						$this->session->set_userdata('username', $this->session->userdata('username'));
-						redirect('AdminController/showTourPackages');
+						redirect('Account/redirect_adminPage');
 					}
 
 			public function delete_TourPackage($deleteid)
@@ -192,7 +192,7 @@ class AdminController extends CI_Controller {
 				if($result == true)
 				{
 					$this->session->set_userdata('username', $this->session->userdata('username'));
-					redirect('AdminController/showTourPackages');
+					redirect('Account/redirect_adminPage');
 				}
 			}
 
