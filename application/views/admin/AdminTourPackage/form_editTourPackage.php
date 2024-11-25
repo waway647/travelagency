@@ -38,28 +38,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="sidebar">
                 <ul>
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminDashboard">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showAdminDashboard">
                         <img src="http://localhost/GitHub/travelagency/images/icons/dashboard.png" alt="Dashboard-icon"><span>Dashboard</span></a></li>
 
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showUserAccounts">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showUserAccounts">
                         <img src="http://localhost/GitHub/travelagency/images/icons/userAccounts.png" alt="User-Accounts-icons"><span>User Accounts</span></a></li>
 
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showTourPackages">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showTourPackages">
                         <img src="http://localhost/GitHub/travelagency/images/icons/tourPackages.png" alt="Tour-Packages-icon"><span>Tour Packages</span></a></li>
 
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminBookings">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showAdminBookings">
                         <img src="http://localhost/GitHub/travelagency/images/icons/bookings.png" alt="Bookings-icon"><span>Bookings</span></a></li>
 
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminArchives">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showAdminArchives">
                         <img src="http://localhost/GitHub/travelagency/images/icons/archives.png" alt="Archives-icon"><span>Archives</span></a></li>
 
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showTransactions">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showTransactions">
                         <img src="http://localhost/GitHub/travelagency/images/icons/transactions.png" alt="Transactions-icon"></span>Transactions</span></a></li>
 
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminReviews">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showAdminReviews">
                         <img src="http://localhost/GitHub/travelagency/images/icons/reviews.png" alt="Reviews-icon"><span>Reviews</span></a></li>
 
-                    <li><a href="http://localhost/GitHub/travelagency/index.php/AdminController/showAdminCreateAcc">
+                    <li><a href="http://localhost/GitHub/travelagency/index.php/Account/showAdminCreateAcc">
                         <img src="http://localhost/GitHub/travelagency/images/icons/add-user.png" alt="Add-AdminAcc-icon"><span>Add Admin</span></li></a>
 
                     <li><a href="http://localhost/GitHub/travelagency/index.php/Account/LogOut">
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  
     <div class="main-content">
         <div id="container">
-            <form method="post" action="<?php echo 'http://localhost/GitHub/travelagency/index.php/AdminController/update_TourPackage/' . $tourpackages->tourpackage_id; ?>">
+            <form method="post" action="<?php echo 'http://localhost/GitHub/travelagency/index.php/Account/update_TourPackage/' . $tourpackages->tourpackage_id; ?>">
                 <h2>Edit Tour Package ID: <?php echo $tourpackages->tourpackage_id ?></h2>
                 <hr id="line">
                 <div class="form-group">
