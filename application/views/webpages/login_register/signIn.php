@@ -81,12 +81,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="socMed-container">
 
+                <a href="http://localhost/github/travelagency">
                     <div class="google">
                         <button type="button" id="otherOptionLogin" onclick="">
-                        <a href="<?= base_url('google') ?>"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt=""></a>
+                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="">
                         <p>Continue with Google</p>
                         </button>
                     </div>
+                    </a>
 
                     <div class="facebook">
                         <button type="button" id="otherOptionLogin" onclick="">
