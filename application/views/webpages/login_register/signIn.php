@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <div class="google">
                         <button type="button" id="otherOptionLogin" onclick="">
-                        <a href="http://localhost/GitHub/travelagency/index.php/Account/"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt=""></a>
+                        <a href="<?= base_url('google') ?>"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt=""></a>
                         <p>Continue with Google</p>
                         </button>
                     </div>

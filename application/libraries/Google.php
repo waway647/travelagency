@@ -10,10 +10,10 @@ class Google {
     public function __construct() {
         // Initialize the Google Client
         $this->client = new Google_Client();
-        $this->client->setApplicationName('CI3 Google Login');
-        $this->client->setClientId('YOUR_GOOGLE_CLIENT_ID');  // Replace with your Google Client ID
-        $this->client->setClientSecret('YOUR_GOOGLE_CLIENT_SECRET'); // Replace with your Client Secret
-        $this->client->setRedirectUri(base_url('google/callback')); // Set your callback URL
+        $this->client->setApplicationName('travelagency');
+        $this->client->setClientId('1039624715098-mfttdpp9pki0h4bbuh9smqerqi9257la.apps.googleusercontent.com');  // Replace with your Google Client ID
+        $this->client->setClientSecret('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'); // Replace with your Client Secret
+        $this->client->setRedirectUri('http://localhost/GitHub/travelagency/index.php/google/callback'); // Set your callback URL
         $this->client->addScope('email');  // Request email scope for the user
         $this->client->setAccessType('offline');
         $this->client->setPrompt('select_account consent');
