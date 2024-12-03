@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 error_reporting(E_ALL ^ E_DEPRECATED);
 
-class AdminController extends Account {
+class AdminController extends CI_Controller {
 
 	public function __construct()
 	{

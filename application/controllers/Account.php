@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 error_reporting(E_ALL ^ E_DEPRECATED);
-include_once (dirname(__FILE__) . "/Account.php");
 
 class Account extends CI_Controller {
 
